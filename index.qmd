@@ -33,4 +33,4 @@ This course website collects all modules for **Applied Math for Data Science**. 
 
 -   **Module 7:** Monte Carlo Methods — random sampling for area, probability, expectation.
 
--   **Module 8:** Time Series — core components, simple forecasts, and error metrics.
+-   **Module 8:** Time Series — core components, simple forecasts, and error metrics .
