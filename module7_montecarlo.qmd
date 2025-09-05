@@ -1,0 +1,15 @@
+---
+title: "Module 7: Introduction to Monte Carlo Methods"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Random sampling to estimate areas, probabilities, and expectations.
+
+## Status
+
+Content for this module will be added here.

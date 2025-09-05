@@ -1,0 +1,15 @@
+---
+title: "Module 8: Introduction to Time Series"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Time plots, moving averages, simple forecasts, MAE/RMSE.
+
+## Status
+
+Content for this module will be added here.

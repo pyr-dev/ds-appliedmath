@@ -1,0 +1,15 @@
+---
+title: "Module 2 / Week 2: Matrices and Matrix Operations"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Matrix algebra essentials for data pipelines and linear systems.
+
+## Status
+
+Content for this module will be added here. 

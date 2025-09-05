@@ -1,0 +1,213 @@
+---
+title: "Lecture 8: Definite Integrals & the Fundamental Theorem"
+subtitle: "Module 5: Calculus for Data Science - Week 3"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Introduction
+
+Today we connect **antiderivatives** to **definite integrals** and make the area story precise. The **definite integral** $\int_a^b f(x)\,dx$ captures **signed area** under a curve; the **Fundamental Theorem of Calculus (FTC)** ties this area to antiderivatives and to **accumulation**. We will compute areas exactly when possible and use the **trapezoid rule** when a closed form is unavailable or we only have sampled data. Along the way, we’ll build intuition with shaded plots and small numeric experiments in R.
+
+---
+
+## 1. Definite Integral as Signed Area
+
+Given a function $f$ on $[a,b]$, the definite integral
+$$
+\int_a^b f(x)\,dx
+$$
+represents the **net (signed) area**: regions where $f(x)\ge 0$ contribute positively; regions where $f(x)<0$ contribute negatively.
+
+### 1.1 Shaded Area Example: $\int_0^{\pi} \sin x\,dx$
+
+We’ll visualize the area under $f(x)=\sin x$ on $[0,\pi]$. Because $\sin x \ge 0$ there, the integral equals the geometric area between the curve and the $x$‑axis.
+
+The code below constructs a data frame for $x$ and $y=\sin x$, then uses a filled area to illustrate the integral region, with black outlines per our house style.
+
+```{r}
+# Purpose: Shade the area under sin(x) on [0, pi] to visualize the definite integral.
+# We draw the sine curve in black and use a light fill to indicate the area.
+
+library(ggplot2)
+library(latex2exp)
+
+# Build data on [0, pi]
+x <- seq(0, pi, by = 0.01)
+y <- sin(x)
+df <- data.frame(x = x, y = y)
+
+ggplot(df, aes(x, y)) +
+  geom_area(fill = "grey88", color = "black", linewidth = 1) +  # shaded area with black outline
+  geom_line(color = "black", linewidth = 1) +                    # curve outline
+  labs(
+    title = TeX("Shaded Area: $\\int_0^{\\pi} \\sin x\\,dx$"),
+    x = "x", y = "f(x)"
+  )
+```
+
+**Key Insight:** On $[0,\pi]$, $\sin x$ stays nonnegative, so the definite integral equals the **geometric area**. (Later we’ll compute this area exactly: $\int_0^{\pi} \sin x\,dx = 2$.)
+
+---
+
+## 2. The Fundamental Theorem of Calculus (FTC)
+
+The FTC has two parts that link **area** and **derivatives**:
+
+-   **FTC Part 1:** If $A(x) = \int_a^x f(t)\,dt$, then $A'(x) = f(x)$ (for continuous $f$). The derivative of an **accumulation function** gives back the original function.
+-   **FTC Part 2:** If $F'(x) = f(x)$, then $\displaystyle \int_a^b f(x)\,dx = F(b) - F(a)$. You can compute exact area via an antiderivative.
+
+### 2.1 Exact Area via FTC Part 2: $\int_0^3 x^2\,dx$
+
+We can integrate $x^2$ exactly: an antiderivative is $F(x)=\frac{x^3}{3}$, so
+$$
+\int_0^3 x^2\,dx = F(3)-F(0) = \frac{27}{3} - 0 = 9.
+$$
+
+The code below shows a small calculation for the exact value and a trapezoid approximation to compare.
+
+```{r}
+# Purpose: Compute ∫_0^3 x^2 dx exactly via FTC and compare to a trapezoid approximation.
+
+# Exact via antiderivative F(x)=x^3/3
+exact <- (3^3)/3 - (0^3)/3
+
+# Trapezoid approximation helper
+trapz <- function(f, a, b, n) {
+  xs <- seq(a, b, length.out = n + 1)
+  ys <- f(xs)
+  dx <- (b - a) / n
+  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))
+}
+f <- function(x) x^2
+approx_n <- 20
+approx_val <- trapz(f, 0, 3, approx_n)
+
+data.frame(Method = c("Exact (FTC)", paste0("Trapezoid (n=", approx_n, ")")),
+           Value  = c(exact, approx_val))
+```
+
+**Key Insight:** When an **antiderivative** is easy to find, FTC Part 2 turns area into a quick subtraction $F(b)-F(a)$. Numerical integration should agree closely for a reasonable number of subintervals.
+
+### 2.2 FTC Part 1 (Numerical Illustration)
+
+Let $f(x)=e^{-x}$ and define the accumulation function $A(x)=\int_0^x f(t)\,dt$. We approximate $A$ numerically with cumulative trapezoids, then take a **numeric derivative** of $A$ and compare it to $f$.
+
+```{r}
+# Purpose: Illustrate FTC Part 1 numerically: derivative of accumulation equals the original function.
+# We build A(x) by cumulative trapezoids and compare a numeric derivative of A to f(x)=exp(-x).
+
+library(ggplot2)
+library(latex2exp)
+
+f <- function(x) exp(-x)
+
+# Grid and cumulative trapezoid for A(x) on [0,5]
+x <- seq(0, 5, by = 0.02)
+fx <- f(x)
+dx <- diff(x)
+traps <- dx * (fx[-length(fx)] + fx[-1]) / 2
+A_num <- c(0, cumsum(traps))
+
+# Numeric derivative of A via centered difference
+h <- 0.02
+A_forward  <- A_num[pmin(1:length(A_num) + 1, length(A_num))]
+A_backward <- A_num[pmax(1:length(A_num) - 1, 1)]
+Aprime_num <- (A_forward - A_backward) / (2*h)
+
+df <- data.frame(x = x, f = fx, Aprime = Aprime_num)
+
+ggplot(df, aes(x)) +
+  geom_line(aes(y = f, linetype = "f(x) = e^{-x}"), color = "black", linewidth = 1) +
+  geom_line(aes(y = Aprime, linetype = "A'(x) (numeric)"), color = "black", linewidth = 1) +
+  scale_linetype_manual(values = c("solid", "dashed")) +
+  labs(
+    title = TeX("FTC Part 1 (Numeric): $\\frac{d}{dx}\\int_0^x e^{-t}\\,dt \\approx e^{-x}$"),
+    x = "x", y = "value", linetype = NULL
+  )
+```
+
+**Key Insight:** The numeric derivative of the accumulation function **overlaps** the original $f(x)=e^{-x}$, illustrating FTC Part 1: differentiating accumulated area recovers the integrand.
+
+---
+
+## 3. Numerical Integration: Trapezoid Rule
+
+When $F$ is hard to find or unavailable, the **trapezoid rule** approximates $\int_a^b f(x)\,dx$ by slicing $[a,b]$ into $n$ subintervals of width $\Delta x$ and summing trapezoid areas:
+$$
+\int_a^b f(x)\,dx \approx \Delta x\left(\tfrac{1}{2}f(x_0) + f(x_1)+\cdots+f(x_{n-1}) + \tfrac{1}{2}f(x_n)\right),
+\quad \Delta x = \frac{b-a}{n}.
+$$
+
+### 3.1 How Step Size Affects Accuracy
+
+We’ll estimate $\int_0^3 x^2\,dx$ with different $n$ and see how the **absolute error** shrinks as $n$ grows.
+
+```{r}
+# Purpose: Show error vs number of subintervals for trapezoid rule on ∫_0^3 x^2 dx.
+# We compute estimates for several n and plot absolute error.
+
+library(ggplot2)
+library(latex2exp)
+
+trapz <- function(f, a, b, n) {
+  xs <- seq(a, b, length.out = n + 1)
+  ys <- f(xs)
+  dx <- (b - a) / n
+  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))
+}
+f <- function(x) x^2
+exact <- 9
+
+ns <- c(4, 8, 16, 32, 64, 128, 256)
+est <- sapply(ns, function(n) trapz(f, 0, 3, n))
+err <- abs(est - exact)
+
+df_err <- data.frame(n = ns, abs_error = err)
+
+ggplot(df_err, aes(x = n, y = abs_error)) +
+  geom_line(color = "black", linewidth = 1) +
+  geom_point(color = "black", size = 1) +
+  labs(
+    title = TeX("Trapezoid Error vs Subintervals: $\\int_0^3 x^2\\,dx$"),
+    x = "Number of subintervals (n)", y = "Absolute error |estimate - exact|"
+  )
+```
+
+**Key Insight:** Finer partitions (larger $n$) reduce the error. For smooth functions, trapezoid error generally improves **quadratically** as you refine the step (rule of thumb).
+
+---
+
+## 4. When to Use Exact vs Numerical Integration
+
+-   **Use exact (FTC) when:** an antiderivative $F$ is easy to find, algebra is stable, and evaluation is cheap ($F(b)-F(a)$).
+-   **Use numerical when:** no elementary $F$ exists (e.g., $e^{-x^2}$), $f$ is defined only by **data** or a **black-box** model, or you want a quick, robust approximation and can control step size.
+
+---
+
+## Practice Problems
+
+1.   Compute exactly using FTC Part 2 (show $F$):  
+     (a) $\int_0^4 2x\,dx$  
+     (b) $\int_1^3 (3x^2 - 1)\,dx$  
+     (c) $\int_0^{\pi} \sin x\,dx$
+2.   Use the trapezoid rule to approximate $\int_0^3 x^2\,dx$ with $n=6,12,24$. Report the absolute error versus the exact value $9$.
+3.   Let $A(x)=\int_0^x e^{-t}\,dt$. Numerically differentiate your $A(x)$ and compare to $e^{-x}$ on $[0,4]$. What step size gives a good match?
+4.   (Concept) Explain why the definite integral can be negative and give a simple example. Why is this useful in modeling?
+
+---
+
+## In this lesson, you learned to
+
+1.   Interpret the **definite integral** as signed area and compute it exactly using **FTC Part 2**.
+2.   Illustrate **FTC Part 1** by showing that the derivative of an **accumulation function** returns the integrand.
+3.   Implement the **trapezoid rule** and reason about how step size affects accuracy.
+4.   Decide when to use exact integration vs numerical approximation in practice.
+
+---
+
+## Coming Up
+
+Next: **Integration in Data Science — Area, AUC, and Expected Value.** We’ll compute areas/aggregates, verify probability densities integrate to 1, and use integrals to compute **expected values** for common distributions.

@@ -1,0 +1,261 @@
+---
+title: "Lecture 1: Functions and Their Role in Data Science"
+subtitle: "Module 5: Calculus for Data Science"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Introduction
+
+In this lecture, we begin our exploration of calculus by revisiting the idea of **functions**. Functions are central in mathematics and data science because they describe relationships between inputs (independent variables) and outputs (dependent variables). Functions allow us to model real-world phenomena, transform data, and make predictions.
+
+Our focus today is on understanding what functions are, why they matter in data science, and how to visualize and work with them in R. This foundation will be essential for later lectures on limits, derivatives, and optimization.
+
+---
+
+## 1. What is a Function?
+
+A **function** is a rule that assigns each input value (usually called $x$) to exactly one output value (usually called $y$).
+
+-   Notation: $f(x)$ represents the value of the function $f$ at input $x$.
+-   Example: $f(x) = 2x + 3$ means that for every input $x$, the output is double $x$ plus 3.
+
+In data science, functions appear everywhere:
+
+-   Linear models in regression: $y = \beta_0 + \beta_1x$
+-   Exponential growth: $N(t) = N_0 e^{rt}$
+-   Logistic functions in classification models
+
+When we talk about functions, it’s also useful to describe:
+
+-   **Domain**: all possible input values ($x$ values).
+-   **Range**: all possible output values ($y$ values).
+
+---
+
+## 2. Common Types of Functions in Data Science
+
+### 2.1 Linear Functions
+
+Linear functions describe straight-line relationships:
+$$
+f(x) = mx + b
+$$
+where $m$ is the slope (rate of change) and $b$ is the intercept.
+
+-   **Domain:** all real numbers ($-\infty < x < \infty$).
+-   **Range:** all real numbers if the slope is nonzero; a single value $y=b$ if the slope is $0$ (a horizontal line).
+
+**Examples of linear functions:**
+
+-   $f(x) = -5$
+-   $g(x) = 2x + 3$
+-   $h(x) = \frac{1}{3}x - 7$
+
+**Real-world applications that can be modeled with linear functions (examples):**
+
+-   Predicting house prices based on size
+-   Modeling daily earnings based on the amount earned per hour
+
+**Application (linear model in context).** If you earn $\$15$ per hour plus a $\$50$ daily bonus, your daily earnings are modeled by $f(h) = 15h + 50$.
+
+The next code block computes and plots daily earnings versus hours worked using a simple linear function in R. It draws both the line and points in black so you can clearly see the linear trend.
+
+```{r}
+# Linear function example: Daily earnings based on hours worked (ggplot2, black styling)
+# What this code does: defines a simple linear function f(h)=15h+50, computes values for 0..8 hours,
+# and plots both the line and the points.
+
+library(ggplot2)
+library(latex2exp)
+
+# Define a simple linear earnings function:
+#   earnings = 15 * hours + 50
+daily_earnings <- function(hours) {
+  15 * hours + 50
+}
+
+# Generate hours from 0 to 8 and compute earnings
+hours_worked <- 0:8
+earnings <- daily_earnings(hours_worked)
+df_earn <- data.frame(hours_worked, earnings)
+
+# Plot line and points in black (linewidth = 1) for consistency
+ggplot(df_earn, aes(x = hours_worked, y = earnings)) +
+  geom_line(color = "black", linewidth = 1) +
+  geom_point(color = "black", size = 1) +
+  labs(
+    title = TeX("Daily earnings: $f(h)=15h+50$"),
+    x = "Hours Worked",
+    y = "Daily Earnings ($)"
+  )
+```
+
+**Key Insight:** The plot is a straight line with positive slope (each extra hour adds $\$15$). The $y$-intercept is $\$50$ (the bonus when $h=0$).
+
+---
+
+### 2.2 Polynomial Functions
+
+A function $f$ of the form
+$$
+f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0
+$$
+is called a **polynomial function of degree $n$**, where $a_n, a_{n-1}, \ldots, a_1, a_0$ are real numbers called coefficients and $a_n \neq 0$.
+
+**Examples of polynomial functions:** 
+
+-   **Degree 0 (constant):** $f(x) = 5$
+-   **Degree 1 (linear):** $f(x) = 3x + 2$
+-   **Degree 2 (quadratic):** $f(x) = 2x^2 - x + 1$
+-   **Degree 3 (cubic):** $f(x) = x^3 - 4x^2 + x - 6$
+
+-   **Domain (any polynomial):** all real numbers.
+-   **Range:** depends on the polynomial. For quadratics, the range starts at the vertex (minimum if it opens up, maximum if it opens down) and extends to $\infty$ or $-\infty$ accordingly.
+
+We’ll focus on the quadratic
+$$
+f(x) = x^2 - 4x + 3.
+$$
+
+The next code block plots this quadratic. Look for the “U” shape and where it crosses the $x$-axis.
+
+```{r}
+# Plotting a quadratic function: f(x) = x^2 - 4x + 3
+# What this code does: computes y for a sequence of x-values and plots the quadratic with a LaTeX title.
+
+library(ggplot2)
+library(latex2exp)
+
+x <- seq(-2, 6, by = 0.1)
+y <- x^2 - 4*x + 3
+df_quad <- data.frame(x, y)
+
+ggplot(df_quad, aes(x, y)) +
+  geom_line(color = "black", linewidth = 1) +
+  labs(
+    title = TeX("Quadratic Function: $f(x) = x^2 - 4x + 3$"),
+    x = "x", y = "f(x)"
+  )
+```
+
+**Key Insight:** This parabola opens upward (coefficient of $x^2$ is positive). It crosses the $x$-axis where $x^2 - 4x + 3 = 0$, i.e., at $x=1$ and $x=3$. The vertex occurs at $x = -\tfrac{b}{2a} = 2$, with $f(2) = -1$, so the range is $[-1, \infty)$.
+
+---
+
+### 2.3 Exponential Functions
+
+Exponential functions model growth or decay:
+$$
+f(x) = a e^{b x}.
+$$
+
+-   If $b > 0$, the function shows growth.
+-   If $b < 0$, the function shows decay.
+
+-   **Domain:** all real numbers.
+-   **Range:** positive real numbers ($y > 0$).
+
+The next code block plots an exponential growth curve. Notice how the rate of increase accelerates as $x$ grows.
+
+```{r}
+# Plotting an exponential growth function: f(x) = 2e^(0.8x)
+# What this code does: computes an exponential curve and plots it with a LaTeX-rendered title.
+
+library(ggplot2)
+library(latex2exp)
+
+x <- seq(0, 5, by = 0.1)
+y <- 2 * exp(0.8 * x)
+df_exp <- data.frame(x, y)
+
+ggplot(df_exp, aes(x, y)) +
+  geom_line(color = "black", linewidth = 1) +
+  labs(
+    title = TeX("Exponential Function: $f(x) = 2e^{0.8x}$"),
+    x = "x", y = "f(x)"
+  )
+```
+
+**Key Insight:** Exponential growth curves rise slowly at first and then faster over time. Outputs are always positive (they never touch or cross $y=0$).
+
+---
+
+## 3. Functions and Data
+
+Functions are not just abstract formulas—they connect directly to datasets. For example, if we want to understand how study time relates to exam scores, we can model that relationship with a simple linear function fit to the data.
+
+The next code block simulates a small dataset (study time and exam score), plots the points in black, and overlays a best-fit regression line (also black).
+
+```{r}
+# Simulate a small dataset and fit a linear model to visualize a data relationship
+# What this code does: generates noisy linear data, plots points, and overlays an LM fit (with explicit formula).
+
+library(ggplot2)
+library(latex2exp)
+
+set.seed(123)                     # for reproducibility
+study_time <- seq(0, 10, by = 1)  # hours studied
+exam_score <- 50 + 5 * study_time + rnorm(11, mean = 0, sd = 5)
+
+df <- data.frame(study_time, exam_score)
+
+ggplot(df, aes(x = study_time, y = exam_score)) +
+  geom_point(color = "black", size = 1) +
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE, color = "black", linewidth = 1) +
+  labs(
+    title = "Exam Scores vs. Study Time",
+    x = "Study Time (hours)", y = "Exam Score"
+  )
+```
+
+**Key Insight:** The fitted line summarizes the average trend: each additional hour of study is associated with an estimated increase in score (the slope). Scatter around the line reflects other factors and noise.
+
+---
+
+## 4. Worked Numerical Example (Quick)
+
+**Why this matters.** Before we dive into limits and derivatives, it’s helpful to practice moving between a formula, an input, and a numeric output. This builds intuition for how inputs drive outputs and sets up the idea of **rate of change** in the next lecture.
+
+Let’s evaluate three functions at $x=2$:
+
+1.   **Linear:** $f(x)=2x+3 \Rightarrow f(2)=2(2)+3=7$.
+2.   **Quadratic:** $q(x)=x^2-4x+3 \Rightarrow q(2)=4-8+3=-1$.
+3.   **Exponential:** $g(x)=2e^{0.8x} \Rightarrow g(2)=2e^{1.6}\approx 2(4.953)\approx 9.906$.
+
+These quick calculations reinforce how to interpret a function and check values against a graph.
+
+---
+
+## 5. Why Functions Matter in Data Science
+
+-   Functions **model real-world processes** (e.g., disease spread, consumer behavior).
+-   Functions help us **predict future values** (e.g., forecasting sales).
+-   Functions form the **basis of machine learning algorithms**, where complex relationships are built from simpler ones.
+-   Functions help us understand **rates of change**, a key bridge to derivatives and optimization.
+
+---
+
+## Practice Problems
+
+1.   Write down a real-world example of a linear relationship in data science. Identify the slope and intercept.
+2.   Sketch or plot the polynomial function $f(x) = x^2 - 2x - 3$. Where does it cross the $x$-axis?
+3.   Suppose a population grows according to $P(t) = 100 e^{0.3t}$. Compute $P(5)$ (population after 5 time units).
+4.   Using R, simulate a dataset where `y = 3x + 2 + random noise`. Plot the data and add a regression line. Briefly describe what the slope represents in your context.
+
+---
+
+## In this lesson, you learned to
+
+1.   Explain what functions are and why they're essential in data science.
+2.   Identify and work with linear, polynomial, and exponential functions.
+3.   Create and interpret graphical representations of functions using R.
+4.   Connect function concepts to real-world data science applications.
+
+---
+
+## Coming Up
+
+In our next lecture, we will introduce the concepts of **limits and continuity**. These ideas help us understand what happens as functions approach specific points, and they set the stage for understanding **derivatives**—the central tool of calculus.

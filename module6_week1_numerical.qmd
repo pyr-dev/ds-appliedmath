@@ -1,0 +1,15 @@
+---
+title: "Module 6 / Week 1: Fundamentals and Function Approximation"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Approximation, numerical differentiation/integration with accuracy considerations.
+
+## Status
+
+Content for this module will be added here.

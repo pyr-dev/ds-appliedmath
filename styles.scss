@@ -1,0 +1,43 @@
+/*-- scss:defaults --*/
+
+// Sass Variables
+// https://quarto.org/docs/output-formats/html-themes.html#sass-variables
+
+// Import Poppins (a geometric sans-serif typeface) from https://fonts.google.com/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Create color palette using the theme- naming convention. This 
+   facilitates the definitions of the colors's variables below*/
+$theme-mostlywhite: #fafafa;  // for the body background
+$theme-almostblack: #333333;     // for the body color
+$theme-darkorange: #f05a28;         // for the link color 
+
+/* Colors' variables */
+$body-bg: $theme-mostlywhite;
+$body-color: $theme-almostblack; 
+$link-color: $theme-darkorange;
+
+/* Fonts' variables */
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-size-root: 15px; 
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  color: $theme-almostblack; 
+}
+
+.navbar * {
+  color: $theme-mostlywhite;
+}
+
+span.navbar-title {
+    color: $theme-mostlywhite; 
+    transition-duration: 0.5s;
+  
+  &:hover {
+    color: lighten($theme-mostlywhite, 10%);
+    transition-duration: 0.5s;
+  }
+}

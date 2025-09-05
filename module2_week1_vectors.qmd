@@ -1,0 +1,15 @@
+---
+title: "Module 2 / Week 1: Vectors and Basic Vector Operations"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Vectors in DS, dot product, norms, projections, and similarity.
+
+## Status
+
+Content for this module will be added here. 

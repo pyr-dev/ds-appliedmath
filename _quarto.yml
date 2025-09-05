@@ -1,0 +1,76 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - assets/site.css
+    - assets/sidebar-toggle.html
+
+book:
+  title: "Applied Math for Data Science"
+  subtitle: "A practical, code-first course"
+  search: true
+  page-navigation: true
+  downloads: []
+  sidebar:
+    style: docked
+    collapse-level: 1
+  chapters:
+    - index.qmd
+    - part: "Module 1 — Introduction to Applied Math for DS"
+      chapters:
+        - module1_overview.qmd
+    - part: "Module 2 — Linear Algebra for Data Science"
+      chapters:
+        - module2_week1_vectors.qmd
+        - module2_week2_matrices.qmd
+        - module2_week3_pca.qmd
+    - part: "Module 3 — Discrete Mathematics for Data Science"
+      chapters:
+        - module3_discrete.qmd
+    - part: "Module 4 — Probability and Statistics"
+      chapters:
+        - module4_week1_stats_prob.qmd
+        - module4_week2_dists_inference.qmd
+    - part: "Module 5 — Calculus for Data Science"
+      chapters:
+        - lecture1.qmd
+        - lecture2.qmd
+        - lecture3.qmd
+        - lecture4.qmd
+        - lecture5.qmd
+        - lecture6.qmd
+        - lecture7.qmd
+        - lecture8.qmd
+        - lecture9.qmd
+    - part: "Module 6 — Numerical Methods"
+      chapters:
+        - module6_week1_numerical.qmd
+        - module6_week2_roots.qmd
+    - part: "Module 7 — Introduction to Monte Carlo Methods"
+      chapters:
+        - module7_montecarlo.qmd
+    - part: "Module 8 — Introduction to Time Series"
+      chapters:
+        - module8_timeseries.qmd
+
+format:
+  html:
+    grid:
+      sidebar-width: 30rem # Specify the desired width in rems
+    theme: cosmo
+    toc: false
+    code-fold: show
+    smooth-scroll: true
+    df-print: paged
+    include-in-header: assets/sidebar-toggle.html
+    css: assets/site.css
+
+editor: source
+
+
+
+
+
+
+
+

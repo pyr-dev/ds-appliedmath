@@ -1,0 +1,188 @@
+---
+title: "Lecture 7: Antiderivatives & Accumulation"
+subtitle: "Module 5: Calculus for Data Science - Week 3"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Introduction
+
+Integration is the calculus of **accumulation**. In this lesson we introduce **antiderivatives** (integration as the reverse of differentiation) and the idea of an **accumulation function** that adds up small contributions over an interval. We will write and check simple indefinite integrals, then build a numerical **trapezoid** helper to approximate accumulated area from data or black‑box functions.
+
+Our focus remains practical: short rules you will actually use, quick verification in R, and clear plots that connect formulas to pictures.
+
+---
+
+## 1. Antiderivatives (Indefinite Integrals)
+
+If $F'(x) = f(x)$, then $F$ is an **antiderivative** of $f$. We write
+$$
+\int f(x)\,dx = F(x) + C,
+$$
+where $C$ is the **constant of integration** (any constant differentiates to $0$).
+
+**Basic rules (informal):**
+
+-   **Linearity:** $\int \big(a\,f(x) + b\,g(x)\big)\,dx = a\int f(x)\,dx + b\int g(x)\,dx$.
+-   **Power rule (reverse):** for $n \ne -1$, $\int x^n\,dx = \frac{x^{n+1}}{n+1} + C$.
+-   **Exponential:** $\int e^{a x}\,dx = \frac{1}{a}e^{a x} + C$ (for constant $a\ne 0$).
+-   **Log reminder:** $\frac{d}{dx}\,\ln|x| = \frac{1}{x}$ for $x\ne 0$ $\Rightarrow$ $\int \frac{1}{x}\,dx = \ln|x| + C$.
+
+When in doubt, **differentiate your answer** to check it returns the original $f(x)$.
+
+---
+
+## 2. Verifying an Antiderivative Numerically
+
+We’ll propose an antiderivative and verify it by comparing a **numeric derivative** of $F$ to the original $f$. Consider
+$$
+f(x) = 3x^2 - 6x + 1,\qquad F(x) = x^3 - 3x^2 + x + C.
+$$
+We expect $F'(x)=f(x)$.
+
+The code below computes a **centered‑difference** derivative of $F$ and plots it against $f$ (line = analytic $f$, points = numeric $F'$).
+
+```{r}
+# Purpose: Numerically verify that F'(x) = f(x) for F(x) = x^3 - 3x^2 + x + C.
+# We compute a centered-difference derivative of F and compare it to f on a grid.
+
+library(ggplot2)
+library(latex2exp)
+
+# Define f and a candidate antiderivative F
+f <- function(x) 3*x^2 - 6*x + 1
+F <- function(x) x^3 - 3*x^2 + x   # constant C drops out upon differentiation
+
+# Grid and step for centered difference
+x <- seq(-2, 4, by = 0.01)
+h <- 0.005
+
+# Centered difference for F' (pad endpoints by clamping within grid)
+Fp_forward  <- F(pmin(x + h, max(x)))
+Fp_backward <- F(pmax(x - h, min(x)))
+Fprime_num  <- (Fp_forward - Fp_backward) / (2*h)
+
+df <- data.frame(x = x, f = f(x), Fp_num = Fprime_num)
+
+ggplot(df, aes(x)) +
+  geom_line(aes(y = f), color = "black", linewidth = 1) +
+  geom_point(aes(y = Fp_num), color = "black", size = 0.6) +
+  labs(
+    title = TeX("Antiderivative Check: numeric $F'(x)$ (points) vs analytic $f(x)$ (line)"),
+    x = "x", y = "value"
+  )
+```
+
+**Key Insight:** The points lie on the line, confirming $F'(x)=f(x)$. Numerically differentiating $F$ is a quick way to **sanity‑check** an antiderivative without doing algebra by hand.
+
+---
+
+## 3. Accumulation Functions and Trapezoids
+
+An **accumulation function** adds up $f$ from a baseline $a$ to a variable upper limit $x$:
+$$
+A(x) = \int_a^x f(t)\,dt.
+$$
+As $x$ moves, $A(x)$ grows by the area under $f$ from $a$ to $x$. We will build $A(x)$ numerically with the **trapezoid rule** and compare to a known case $f(x)=e^{-x}$ with $a=0$, where the exact accumulation is
+$$
+A(x) = 1 - e^{-x}.
+$$
+
+The next code constructs a simple **cumulative trapezoid** and plots both $f$ and $A$ together (different linetypes, both black).
+
+```{r}
+# Purpose: Build an accumulation function A(x) = ∫_0^x f(t) dt numerically (trapezoids) for f(x)=exp(-x).
+# We compute a cumulative trapezoid over a grid and compare to the exact A(x)=1 - exp(-x).
+
+library(ggplot2)
+library(latex2exp)
+
+# Function and grid
+f <- function(x) exp(-x)
+x <- seq(0, 5, by = 0.02)
+fx <- f(x)
+
+# Cumulative trapezoid from 0 to each x_k
+# Trapezoid on [x_i, x_{i+1}]: (Δx) * (f_i + f_{i+1}) / 2
+dx <- diff(x)
+traps <- dx * (fx[-length(fx)] + fx[-1]) / 2
+A_num <- c(0, cumsum(traps))  # A(0)=0
+
+# Exact accumulation for comparison
+A_exact <- 1 - exp(-x)
+
+df <- data.frame(x = x, f = fx, A_num = A_num, A_exact = A_exact)
+
+# Plot f and A together (same axes; both in [0,1] for x >= 0)
+ggplot(df, aes(x)) +
+  geom_line(aes(y = f, linetype = "f(x) = e^{-x}"), color = "black", linewidth = 1) +
+  geom_line(aes(y = A_num, linetype = "A_num(x) (trapezoid)"), color = "black", linewidth = 1) +
+  geom_line(aes(y = A_exact, linetype = "A_exact(x) = 1 - e^{-x}"), color = "black", linewidth = 1) +
+  scale_linetype_manual(values = c("solid", "dashed", "dotted")) +
+  labs(
+    title = TeX("Accumulation via Trapezoids: $A(x)=\\int_0^x e^{-t}\\,dt$"),
+    x = "x", y = "value", linetype = NULL
+  )
+```
+
+**Key Insight:** For a reasonably fine grid, the **cumulative trapezoid** closely matches the exact accumulation. You can reuse this approach whenever you have samples of $f$ but no closed‑form antiderivative.
+
+---
+
+## 4. When No Elementary Antiderivative Exists
+
+Some useful functions (e.g., $e^{-x^2}$) have **no elementary antiderivative**. Numerical integration becomes the default. Below we approximate
+$$
+\int_0^1 e^{-x^2}\,dx
+$$
+with the trapezoid rule at several step sizes to see convergence.
+
+```{r}
+# Purpose: Approximate ∫_0^1 exp(-x^2) dx with trapezoids for several step sizes; show convergence in a table.
+
+# Trapezoid helper on [a,b] with n subintervals
+trapz <- function(f, a, b, n) {
+  xs <- seq(a, b, length.out = n + 1)
+  ys <- f(xs)
+  dx <- (b - a) / n
+  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))
+}
+
+f <- function(x) exp(-(x^2))
+
+ns <- c(10, 20, 50, 100, 200, 500, 1000)
+approx_vals <- sapply(ns, function(n) trapz(f, 0, 1, n))
+
+data.frame(n_subintervals = ns, Trapz_Estimate = approx_vals)
+```
+
+**Key Insight:** As we refine the step size (increase $n$), the trapezoid estimates stabilize. In later courses you’ll meet more accurate gauges (e.g., Simpson’s rule), but the **trapezoid** is a reliable first pass and easy to implement.
+
+---
+
+## Practice Problems
+
+1.   Compute the following indefinite integrals and check by differentiating your answers:  
+     (a) $\int (4x^3 - 6x + 5)\,dx$  
+     (b) $\int (3e^{2x} - 7)\,dx$  
+     (c) $\int \frac{1}{x}\,dx$ (state the domain restriction).
+2.   For $f(x)=2x-1$, construct the accumulation function $A(x)=\int_0^x f(t)\,dt$. Plot both $f$ and $A$ on the same axes and explain how $A$ changes where $f$ is positive vs. negative.
+3.   Use the trapezoid rule to approximate $\int_0^2 e^{-x}\,dx$ with 20 and 200 subintervals. Compare to the exact $1 - e^{-2}$.
+4.   (Concept) Explain why adding a constant $C$ to an antiderivative does not change its derivative, and describe what this means for graphing families of antiderivatives.
+
+---
+
+## In this lesson, you learned to
+
+1.   Interpret **antiderivatives** as the reverse of differentiation and apply basic integration rules.
+2.   **Verify** an antiderivative numerically by differentiating it and comparing to the original function.
+3.   Build and plot an **accumulation function** using the **trapezoid rule**.
+4.   Recognize when numerical integration is needed (no elementary antiderivative) and assess convergence briefly.
+
+---
+
+## Coming Up
+
+Next time we connect antiderivatives to **definite integrals** via the **Fundamental Theorem of Calculus**. We will compute exact areas when possible and use numerical integration (trapezoids) when necessary, with shaded plots to build intuition.

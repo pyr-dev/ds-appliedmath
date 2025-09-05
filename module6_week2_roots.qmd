@@ -1,0 +1,15 @@
+---
+title: "Module 6 / Week 2: Root‑Finding Methods"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Bisection and Newton–Raphson with convergence intuition and pitfalls.
+
+## Status
+
+Content for this module will be added here.

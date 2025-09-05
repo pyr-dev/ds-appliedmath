@@ -1,0 +1,15 @@
+---
+title: "Module 3: Discrete Mathematics for Data Science"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Sets, logic, and combinatorics with DS‑flavored examples.
+
+## Status
+
+Content for this module will be added here. 

@@ -1,0 +1,15 @@
+---
+title: "Module 4 / Week 1: Descriptive Statistics and Basic Probability"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Summaries, visuals, and foundational probability rules.
+
+## Status
+
+Content for this module will be added here.

@@ -1,0 +1,15 @@
+---
+title: "Module 4 / Week 2: Distributions and Basic Inference"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Common distributions and light‑touch inference; CLT intuition.
+
+## Status
+
+Content for this module will be added here. 

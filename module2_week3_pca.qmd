@@ -1,0 +1,15 @@
+---
+title: "Module 2 / Week 3: Linear Transformations and PCA"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Eigen‑intuition and a simplified PCA workflow for dimensionality reduction.
+
+## Status
+
+Content for this module will be added here. 

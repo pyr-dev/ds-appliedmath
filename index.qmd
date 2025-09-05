@@ -1,0 +1,36 @@
+---
+title: "Applied Math for Data Science"
+subtitle: "Eight modules | Hands-on R | One-hour lessons"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Welcome
+
+This course website collects all modules for **Applied Math for Data Science**. It follows a **book-style** layout:
+
+-   A **left, docked, scrollable sidebar** with collapsible module sections.
+
+-   A **search** icon in the header for site-wide search.
+
+-   A **toggle sidebar** icon to collapse or expand the sidebar.
+
+## Modules Overview
+
+-   **Module 1:** Introduction to Applied Math for DS — course overview, notation, and where math fits the DS pipeline.
+
+-   **Module 2:** Linear Algebra — vectors, matrices, and PCA intuition with R demos.
+
+-   **Module 3:** Discrete Mathematics — sets, logic, and combinatorics for DS tasks.
+
+-   **Module 4:** Probability & Statistics — descriptive stats, probability, distributions, and light inference.
+
+-   **Module 5:** Calculus for DS — derivatives, optimization, gradient descent, and integration (9 lectures completed).
+
+-   **Module 6:** Numerical Methods — approximation, differentiation/integration, and root-finding.
+
+-   **Module 7:** Monte Carlo Methods — random sampling for area, probability, expectation.
+
+-   **Module 8:** Time Series — core components, simple forecasts, and error metrics.

@@ -1,0 +1,276 @@
+---
+title: "Lecture 6: Gradient Descent in Practice"
+subtitle: "Module 5: Calculus for Data Science - Week 3"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Introduction
+
+In this lesson we turn derivatives into an **algorithm**: **gradient descent**. The central idea is simple—move parameters in the direction that **decreases** a chosen loss, using the **gradient** as our compass. We will keep the treatment practical and visual: start with a 1D warm‑up, study the effect of the **step size** (learning rate), watch descent on a 2D contour plot, and then fit a line by minimizing mean squared error with gradient descent.
+
+Our goals are to understand what the gradient tells us, how step size affects convergence, and how to implement a basic but reliable gradient‑descent loop in R for smooth, convex problems we meet in introductory modeling.
+
+---
+
+## 1. From Slope to Algorithm
+
+For a scalar function $f(x)$, the gradient in 1D is just $f'(x)$. A single **gradient descent update** with learning rate $\eta>0$ is
+$$
+x_{k+1} = x_k - \eta\,f'(x_k).
+$$
+Intuitively, we step **against** the slope, by a small amount $\eta$.
+
+### 1.1 Warm‑Up: 1D Gradient Descent on a Quadratic
+
+We use $f(x) = (x-3)^2$, which has a unique minimum at $x=3$ and derivative $f'(x)=2(x-3)$. We will visualize the function, run a few descent steps, and plot both the **iterates on the curve** and the **loss vs iteration**.
+
+```{r}
+# Purpose: Run gradient descent on f(x)=(x-3)^2, visualize iterates on the curve, and plot loss vs iteration.
+# This shows how updates x_{k+1} = x_k - eta * f'(x_k) converge to the minimum for a sensible eta.
+
+library(ggplot2)
+library(latex2exp)
+
+# Define function and derivative
+f  <- function(x) (x - 3)^2
+fp <- function(x) 2 * (x - 3)
+
+# Gradient descent settings
+eta <- 0.2                   # step size (learning rate)
+iters <- 15
+xk <- numeric(iters + 1)
+xk[1] <- -2                  # start far from the minimizer
+for (k in 1:iters) {
+  xk[k + 1] <- xk[k] - eta * fp(xk[k])
+}
+
+# Build data for plotting the curve and iterates
+x_grid <- seq(-3, 6, by = 0.01)
+df_curve <- data.frame(x = x_grid, y = f(x_grid))
+df_pts   <- data.frame(x = xk, y = f(xk), iter = 0:iters)
+
+# Figure 1: curve with iterate points
+p1 <- ggplot(df_curve, aes(x, y)) +
+  geom_line(color = "black", linewidth = 1) +
+  geom_point(data = df_pts, aes(x, y), color = "black", size = 1) +
+  labs(
+    title = TeX("1D Gradient Descent on $f(x)=(x-3)^2$ (points are iterates)"),
+    x = "x", y = "f(x)"
+  )
+
+# Figure 2: loss vs iteration
+df_loss <- data.frame(iter = 0:iters, loss = f(xk))
+p2 <- ggplot(df_loss, aes(iter, loss)) +
+  geom_line(color = "black", linewidth = 1) +
+  geom_point(color = "black", size = 1) +
+  labs(
+    title = TeX("Loss vs Iteration: $f(x_k)$ decreases under sensible $\\eta$"),
+    x = "Iteration k", y = "f(x_k)"
+  )
+
+p1
+p2
+```
+
+**Key Insight:** With a reasonable $\eta$, loss decreases **monotonically** on this convex quadratic, and $x_k$ moves steadily toward $3$. Too small $\eta$ is slow; too large $\eta$ can overshoot or diverge.
+
+---
+
+## 2. Step Size (Learning Rate) Matters
+
+We contrast a **convergent** step size with an **aggressive** step size that overshoots. We reuse $f(x)=(x-3)^2$ with the same start and compare loss curves using different **linetypes** (both black).
+
+```{r}
+# Purpose: Show the effect of learning rate on convergence using two runs and comparing loss curves.
+# Both lines are black; we use linetype to distinguish them per house style.
+
+library(ggplot2)
+library(latex2exp)
+
+f  <- function(x) (x - 3)^2
+fp <- function(x) 2 * (x - 3)
+
+gd_run <- function(eta, iters = 20, x0 = -2) {
+  xs <- numeric(iters + 1); xs[1] <- x0
+  for (k in 1:iters) xs[k + 1] <- xs[k] - eta * fp(xs[k])
+  data.frame(iter = 0:iters, loss = f(xs), eta = eta)
+}
+
+df_a <- gd_run(eta = 0.2, iters = 20)   # convergent
+df_b <- gd_run(eta = 1.1, iters = 20)   # overshoots/oscillates
+
+df <- rbind(
+  transform(df_a, label = "eta = 0.2", lty = "solid"),
+  transform(df_b, label = "eta = 1.1", lty = "dashed")
+)
+
+ggplot(df, aes(iter, loss, linetype = lty)) +
+  geom_line(color = "black", linewidth = 1) +
+  labs(
+    title = TeX("Learning Rate Shapes Convergence on $f(x)=(x-3)^2$"),
+    x = "Iteration", y = "Loss $f(x_k)$"
+  ) +
+  guides(linetype = "none")
+```
+
+**Key Insight:** A modest $\eta$ yields a smooth, fast decrease; a large $\eta$ causes oscillations or divergence. In practice, start small, monitor loss, and adjust if needed.
+
+---
+
+## 3. 2D Descent on a Convex Bowl (Contour View)
+
+We minimize
+$$
+J(a,b) = (a-2)^2 + 4\,(b+1)^2,
+$$
+whose gradient is $\nabla J(a,b) = \big(2(a-2),\,8(b+1)\big)$. We will plot **contours** of $J$ and overlay the **path** of gradient descent.
+
+```{r}
+# Purpose: Visualize gradient descent on a 2D convex function with contour lines and an overlaid path.
+# We generate a grid for J(a,b), run GD from an initial point, and draw the iterates.
+
+library(ggplot2)
+library(latex2exp)
+
+J <- function(a, b) (a - 2)^2 + 4 * (b + 1)^2
+gradJ <- function(a, b) c(2 * (a - 2), 8 * (b + 1))
+
+# Grid for contours
+a_seq <- seq(-4, 5, by = 0.05)
+b_seq <- seq(-4, 4, by = 0.05)
+grid <- expand.grid(a = a_seq, b = b_seq)
+grid$J <- J(grid$a, grid$b)
+
+# Gradient descent path
+eta <- 0.2
+steps <- 25
+a <- -3; b <- 3
+path <- data.frame(step = 0:steps, a = NA_real_, b = NA_real_, J = NA_real_)
+path$a[1] <- a; path$b[1] <- b; path$J[1] <- J(a, b)
+for (k in 1:steps) {
+  g <- gradJ(a, b)
+  a <- a - eta * g[1]
+  b <- b - eta * g[2]
+  path$a[k + 1] <- a
+  path$b[k + 1] <- b
+  path$J[k + 1] <- J(a, b)
+}
+
+ggplot(grid, aes(a, b, z = J)) +
+  stat_contour(color = "black") +
+  geom_path(data = path, aes(a, b), color = "black", linewidth = 1) +
+  geom_point(data = path, aes(a, b), color = "black", size = 1) +
+  labs(
+    title = TeX("2D Gradient Descent Path on $J(a,b)=(a-2)^2 + 4(b+1)^2$"),
+    x = "a", y = "b"
+  )
+```
+
+**Key Insight:** The path follows steepest descent toward $(2,-1)$. Contours help us see how anisotropy (different curvature in $a$ vs $b$) affects the path’s shape and the choice of step size.
+
+---
+
+## 4. Linear Regression via Gradient Descent
+
+We fit $\hat{y} = w_1 x + w_0$ by minimizing **mean squared error**
+$$
+L(w_0,w_1) = \frac{1}{n} \sum_{i=1}^n \big(y_i - (w_1 x_i + w_0)\big)^2.
+$$
+The gradient is
+$$
+\frac{\partial L}{\partial w_0} = -\frac{2}{n}\sum_{i=1}^n \big(y_i - (w_1 x_i + w_0)\big), \qquad
+\frac{\partial L}{\partial w_1} = -\frac{2}{n}\sum_{i=1}^n x_i\,\big(y_i - (w_1 x_i + w_0)\big).
+$$
+
+We implement gradient descent, compare to the closed‑form OLS solution and `lm()`, and visualize the fitted line and the loss curve.
+
+```{r}
+# Purpose: Minimize linear regression MSE with gradient descent; compare to closed-form and lm().
+# We plot the data with the GD-fitted line and the loss-vs-iteration curve.
+
+library(ggplot2)
+library(latex2exp)
+
+set.seed(7)
+n <- 80
+x <- runif(n, 0, 12)
+y <- 2.2 * x + 5 + rnorm(n, sd = 3)
+
+# Closed-form OLS for reference
+m_star <- cov(x, y) / var(x)
+b_star <- mean(y) - m_star * mean(x)
+
+# Gradient of L(w0,w1)
+dL_dw0 <- function(w0, w1) (-2/length(y)) * sum(y - (w1 * x + w0))
+dL_dw1 <- function(w0, w1) (-2/length(y)) * sum(x * (y - (w1 * x + w0)))
+
+# Gradient descent loop
+eta <- 1e-3
+steps <- 2000
+w0 <- 0; w1 <- 0
+loss <- numeric(steps)
+for (k in 1:steps) {
+  # Compute gradient at current (w0, w1)
+  g0 <- dL_dw0(w0, w1)
+  g1 <- dL_dw1(w0, w1)
+  # Update
+  w0 <- w0 - eta * g0
+  w1 <- w1 - eta * g1
+  # Track loss
+  loss[k] <- mean((y - (w1 * x + w0))^2)
+}
+
+# Compare to lm()
+coef_lm <- coef(lm(y ~ x))
+
+# Plot data with GD-fitted line
+df <- data.frame(x = x, y = y)
+p_line <- ggplot(df, aes(x, y)) +
+  geom_point(color = "black", size = 1) +
+  geom_abline(slope = w1, intercept = w0, color = "black", linewidth = 1) +
+  labs(
+    title = TeX("Linear Fit via Gradient Descent: $\\hat{y}=w_1 x + w_0$"),
+    x = "x", y = "y"
+  )
+
+# Loss vs iteration
+df_loss <- data.frame(iter = 1:steps, loss = loss)
+p_loss <- ggplot(df_loss, aes(iter, loss)) +
+  geom_line(color = "black", linewidth = 1) +
+  labs(
+    title = TeX("MSE Loss vs Iteration under Gradient Descent"),
+    x = "Iteration", y = "MSE"
+  )
+
+p_line
+p_loss
+```
+
+**Key Insight:** For this well‑scaled problem, gradient descent converges smoothly to a line close to OLS/`lm()`. In practice, **feature scaling** helps GD (and many optimizers) converge faster and more stably.
+
+---
+
+## Practice Problems
+
+1.   Run 1D gradient descent on $f(x)=(x-4)^2$ with $x_0=-6$ for several $\eta$ values (e.g., $0.05, 0.2, 0.8$). Plot loss vs iteration and compare behavior.
+2.   Modify the 2D example to $J(a,b) = (a-1)^2 + 9(b-2)^2$. Plot the contour path with $\eta=0.15$ and discuss how the curvature ratio affects the path.
+3.   Implement gradient descent for linear regression but **standardize** $x$ first (subtract mean, divide by standard deviation). Compare convergence speed of loss vs iteration with and without standardization.
+4.   Try a **learning-rate schedule**: set $\eta_k = \frac{\eta_0}{1 + 0.001 k}$ in the linear regression GD loop. Does it help or hurt convergence? Why might schedules be used?
+
+---
+
+## In this lesson, you learned to
+
+1.   Interpret gradient descent updates and monitor convergence with loss curves.
+2.   Choose and reason about step sizes; recognize overshooting and divergence.
+3.   Visualize 2D descent with contour plots to understand geometry and curvature.
+4.   Fit a simple linear regression with gradient descent and compare to OLS/`lm()`.
+
+---
+
+## Coming Up
+
+Next we pivot to **integration**: thinking in reverse about accumulation and area. We will connect discrete sums to continuous areas, estimate areas under curves, and motivate the **Fundamental Theorem of Calculus** for data applications.

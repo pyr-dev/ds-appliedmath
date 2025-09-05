@@ -1,0 +1,15 @@
+---
+title: "Module 1: Introduction to Applied Math for Data Science"
+format:
+  html:
+    code-fold: show
+editor: source
+---
+
+## Overview
+
+Course scope, notation, and how math supports the data science pipeline (overview, examples, conventions).
+
+## Status
+
+Content for this module will be added here. 
