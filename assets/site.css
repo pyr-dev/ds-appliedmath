@@ -1,0 +1,57 @@
+/* ========== Applied Math for DS — site tweaks ========== */
+
+/* (a) Increase left sidebar width by ~75% (from ~15rem to ~26rem ≈ 416px).
+   Adjust this value to taste. */
+:root {
+  --sidebar-width: 26rem;
+}
+
+/* (b) Increase vertical spacing / line-height within the sidebar */
+#quarto-sidebar .sidebar-link,
+#quarto-sidebar .sidebar-item {
+  line-height: 1.6;                 /* more airy lines */
+}
+#quarto-sidebar .sidebar-item {
+  padding-top: 0.15rem;             /* subtle vertical padding */
+  padding-bottom: 0.15rem;
+}
+#quarto-sidebar ul li {
+  margin: 0.1rem 0;                 /* small gaps between items */
+}
+
+/* (d) Double the left margin/padding of the main content panel */
+main.content {
+  padding-left: 2rem;               /* default is ~1rem; now doubled */
+}
+
+/* Collapsed-state grid when sidebar is hidden via our toggle */
+body.ams-sidebar-collapsed #quarto-sidebar {
+  display: none;
+}
+body.ams-sidebar-collapsed .page-columns {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+/* (c) Toggle button styling (now injected into main panel) */
+#ams-sidebar-toggle {
+  position: sticky;                 /* stays visible at top of main content */
+  top: 0.75rem;
+  z-index: 1000;
+  margin: 0 0 0.75rem 0;            /* space below the button */
+  font-size: 1rem;
+  line-height: 1;
+  padding: 6px 9px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  background: var(--bs-body-bg, #ffffff);
+  cursor: pointer;
+}
+/* Hide toggle on narrow screens; Quarto provides mobile hamburger already */
+@media (max-width: 991.98px) {
+  #ams-sidebar-toggle { display: none; }
+}
+
+/* Minor typography touch-ups */
+.quarto-title-block .quarto-title h1 { margin-bottom: 0.25rem; }
+.quarto-title-block .quarto-title-meta { margin-top: 0.25rem; }
+details.quarto-acc-wrapper > summary { font-weight: 600; }
