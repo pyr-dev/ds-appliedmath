@@ -1,0 +1,24 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find main content container (Quarto Book)
+  var main = document.querySelector('main.content') || document.querySelector('main');
+  // Create the toggle button
+  var btn = document.createElement('button');
+  btn.id = 'ams-sidebar-toggle';
+  btn.setAttribute('title', 'Toggle sidebar');
+  btn.textContent = '☰ Sidebar';
+  // Insert as the first element in main content (so it sits within the main panel)
+  if (main && main.firstChild) {
+    main.insertBefore(btn, main.firstChild);
+  } else if (main) {
+    main.appendChild(btn);
+  } else {
+    // Fallback: append to body
+    document.body.appendChild(btn);
+  }
+  // Toggle the collapsed state on click
+  btn.addEventListener('click', function() {
+    document.body.classList.toggle('ams-sidebar-collapsed');
+  });
+});
+</script>

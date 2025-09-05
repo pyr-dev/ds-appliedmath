@@ -1,0 +1,1109 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Applied Math for Data Science",
+    "section": "",
+    "text": "0.1 Welcome\nThis course website collects all modules for Applied Math for Data Science. It follows a book-style layout:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Applied Math for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Applied Math for Data Science",
+    "section": "",
+    "text": "A left, docked, scrollable sidebar with collapsible module sections.\nA search icon in the header for site-wide search.\nA toggle sidebar icon to collapse or expand the sidebar.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Applied Math for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#build-instructions",
+    "href": "index.html#build-instructions",
+    "title": "Applied Math for Data Science",
+    "section": "0.2 Build Instructions",
+    "text": "0.2 Build Instructions\nquarto preview   # live reload server\n# or\nquarto render    # builds the static site to _book/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Applied Math for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#modules-overview",
+    "href": "index.html#modules-overview",
+    "title": "Applied Math for Data Science",
+    "section": "0.2 Modules Overview",
+    "text": "0.2 Modules Overview\n\nModule 1: Introduction to Applied Math for DS — course overview, notation, and where math fits the DS pipeline.\nModule 2: Linear Algebra — vectors, matrices, and PCA intuition with R demos.\nModule 3: Discrete Mathematics — sets, logic, and combinatorics for DS tasks.\nModule 4: Probability & Statistics — descriptive stats, probability, distributions, and light inference.\nModule 5: Calculus for DS — derivatives, optimization, gradient descent, and integration (9 lectures completed).\nModule 6: Numerical Methods — approximation, differentiation/integration, and root-finding.\nModule 7: Monte Carlo Methods — random sampling for area, probability, expectation.\nModule 8: Time Series — core components, simple forecasts, and error metrics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Applied Math for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "module1_overview.html",
+    "href": "module1_overview.html",
+    "title": "2  Module 1: Introduction to Applied Math for Data Science",
+    "section": "",
+    "text": "2.1 Overview\nCourse scope, notation, and how math supports the data science pipeline (overview, examples, conventions).",
+    "crumbs": [
+      "Module 1 — Introduction to Applied Math for DS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1: Introduction to Applied Math for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "module1_overview.html#status",
+    "href": "module1_overview.html#status",
+    "title": "2  Module 1: Introduction to Applied Math for Data Science",
+    "section": "2.2 Status",
+    "text": "2.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 1 — Introduction to Applied Math for DS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1: Introduction to Applied Math for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "module2_week1_vectors.html",
+    "href": "module2_week1_vectors.html",
+    "title": "3  Module 2 / Week 1: Vectors and Basic Vector Operations",
+    "section": "",
+    "text": "3.1 Overview\nVectors in DS, dot product, norms, projections, and similarity.",
+    "crumbs": [
+      "Module 2 — Linear Algebra for Data Science",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 2 / Week 1: Vectors and Basic Vector Operations</span>"
+    ]
+  },
+  {
+    "objectID": "module2_week1_vectors.html#status",
+    "href": "module2_week1_vectors.html#status",
+    "title": "3  Module 2 / Week 1: Vectors and Basic Vector Operations",
+    "section": "3.2 Status",
+    "text": "3.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 2 — Linear Algebra for Data Science",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 2 / Week 1: Vectors and Basic Vector Operations</span>"
+    ]
+  },
+  {
+    "objectID": "module2_week2_matrices.html",
+    "href": "module2_week2_matrices.html",
+    "title": "4  Module 2 / Week 2: Matrices and Matrix Operations",
+    "section": "",
+    "text": "4.1 Overview\nMatrix algebra essentials for data pipelines and linear systems.",
+    "crumbs": [
+      "Module 2 — Linear Algebra for Data Science",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 2 / Week 2: Matrices and Matrix Operations</span>"
+    ]
+  },
+  {
+    "objectID": "module2_week2_matrices.html#status",
+    "href": "module2_week2_matrices.html#status",
+    "title": "4  Module 2 / Week 2: Matrices and Matrix Operations",
+    "section": "4.2 Status",
+    "text": "4.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 2 — Linear Algebra for Data Science",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 2 / Week 2: Matrices and Matrix Operations</span>"
+    ]
+  },
+  {
+    "objectID": "module2_week3_pca.html",
+    "href": "module2_week3_pca.html",
+    "title": "5  Module 2 / Week 3: Linear Transformations and PCA",
+    "section": "",
+    "text": "5.1 Overview\nEigen‑intuition and a simplified PCA workflow for dimensionality reduction.",
+    "crumbs": [
+      "Module 2 — Linear Algebra for Data Science",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Module 2 / Week 3: Linear Transformations and PCA</span>"
+    ]
+  },
+  {
+    "objectID": "module2_week3_pca.html#status",
+    "href": "module2_week3_pca.html#status",
+    "title": "5  Module 2 / Week 3: Linear Transformations and PCA",
+    "section": "5.2 Status",
+    "text": "5.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 2 — Linear Algebra for Data Science",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Module 2 / Week 3: Linear Transformations and PCA</span>"
+    ]
+  },
+  {
+    "objectID": "module3_discrete.html",
+    "href": "module3_discrete.html",
+    "title": "6  Module 3: Discrete Mathematics for Data Science",
+    "section": "",
+    "text": "6.1 Overview\nSets, logic, and combinatorics with DS‑flavored examples.",
+    "crumbs": [
+      "Module 3 — Discrete Mathematics for Data Science",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Module 3: Discrete Mathematics for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "module3_discrete.html#status",
+    "href": "module3_discrete.html#status",
+    "title": "6  Module 3: Discrete Mathematics for Data Science",
+    "section": "6.2 Status",
+    "text": "6.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 3 — Discrete Mathematics for Data Science",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Module 3: Discrete Mathematics for Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "module4_week1_stats_prob.html",
+    "href": "module4_week1_stats_prob.html",
+    "title": "7  Module 4 / Week 1: Descriptive Statistics and Basic Probability",
+    "section": "",
+    "text": "7.1 Overview\nSummaries, visuals, and foundational probability rules.",
+    "crumbs": [
+      "Module 4 — Probability and Statistics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module 4 / Week 1: Descriptive Statistics and Basic Probability</span>"
+    ]
+  },
+  {
+    "objectID": "module4_week1_stats_prob.html#status",
+    "href": "module4_week1_stats_prob.html#status",
+    "title": "7  Module 4 / Week 1: Descriptive Statistics and Basic Probability",
+    "section": "7.2 Status",
+    "text": "7.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 4 — Probability and Statistics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Module 4 / Week 1: Descriptive Statistics and Basic Probability</span>"
+    ]
+  },
+  {
+    "objectID": "module4_week2_dists_inference.html",
+    "href": "module4_week2_dists_inference.html",
+    "title": "8  Module 4 / Week 2: Distributions and Basic Inference",
+    "section": "",
+    "text": "8.1 Overview\nCommon distributions and light‑touch inference; CLT intuition.",
+    "crumbs": [
+      "Module 4 — Probability and Statistics",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module 4 / Week 2: Distributions and Basic Inference</span>"
+    ]
+  },
+  {
+    "objectID": "module4_week2_dists_inference.html#status",
+    "href": "module4_week2_dists_inference.html#status",
+    "title": "8  Module 4 / Week 2: Distributions and Basic Inference",
+    "section": "8.2 Status",
+    "text": "8.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 4 — Probability and Statistics",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Module 4 / Week 2: Distributions and Basic Inference</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html",
+    "href": "lecture1.html",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "",
+    "text": "9.1 Introduction\nIn this lecture, we begin our exploration of calculus by revisiting the idea of functions. Functions are central in mathematics and data science because they describe relationships between inputs (independent variables) and outputs (dependent variables). Functions allow us to model real-world phenomena, transform data, and make predictions.\nOur focus today is on understanding what functions are, why they matter in data science, and how to visualize and work with them in R. This foundation will be essential for later lectures on limits, derivatives, and optimization.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#what-is-a-function",
+    "href": "lecture1.html#what-is-a-function",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.2 1. What is a Function?",
+    "text": "9.2 1. What is a Function?\nA function is a rule that assigns each input value (usually called \\(x\\)) to exactly one output value (usually called \\(y\\)).\n\nNotation: \\(f(x)\\) represents the value of the function \\(f\\) at input \\(x\\).\nExample: \\(f(x) = 2x + 3\\) means that for every input \\(x\\), the output is double \\(x\\) plus 3.\n\nIn data science, functions appear everywhere:\n\nLinear models in regression: \\(y = \\beta_0 + \\beta_1x\\)\nExponential growth: \\(N(t) = N_0 e^{rt}\\)\nLogistic functions in classification models\n\nWhen we talk about functions, it’s also useful to describe:\n\nDomain: all possible input values (\\(x\\) values).\nRange: all possible output values (\\(y\\) values).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#common-types-of-functions-in-data-science",
+    "href": "lecture1.html#common-types-of-functions-in-data-science",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.3 2. Common Types of Functions in Data Science",
+    "text": "9.3 2. Common Types of Functions in Data Science\n\n9.3.1 2.1 Linear Functions\nLinear functions describe straight-line relationships: \\[\nf(x) = mx + b\n\\] where \\(m\\) is the slope (rate of change) and \\(b\\) is the intercept.\n\nDomain: all real numbers (\\(-\\infty &lt; x &lt; \\infty\\)).\nRange: all real numbers if the slope is nonzero; a single value \\(y=b\\) if the slope is \\(0\\) (a horizontal line).\n\nExamples of linear functions:\n\n\\(f(x) = -5\\)\n\\(g(x) = 2x + 3\\)\n\\(h(x) = \\frac{1}{3}x - 7\\)\n\nReal-world applications that can be modeled with linear functions (examples):\n\nPredicting house prices based on size\nModeling daily earnings based on the amount earned per hour\n\nApplication (linear model in context). If you earn \\(\\$15\\) per hour plus a \\(\\$50\\) daily bonus, your daily earnings are modeled by \\(f(h) = 15h + 50\\).\nThe next code block computes and plots daily earnings versus hours worked using a simple linear function in R. It draws both the line and points in black so you can clearly see the linear trend.\n\n\nCode\n# Linear function example: Daily earnings based on hours worked (ggplot2, black styling)\n# What this code does: defines a simple linear function f(h)=15h+50, computes values for 0..8 hours,\n# and plots both the line and the points.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Define a simple linear earnings function:\n#   earnings = 15 * hours + 50\ndaily_earnings &lt;- function(hours) {\n  15 * hours + 50\n}\n\n# Generate hours from 0 to 8 and compute earnings\nhours_worked &lt;- 0:8\nearnings &lt;- daily_earnings(hours_worked)\ndf_earn &lt;- data.frame(hours_worked, earnings)\n\n# Plot line and points in black (linewidth = 1) for consistency\nggplot(df_earn, aes(x = hours_worked, y = earnings)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  geom_point(color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"Daily earnings: $f(h)=15h+50$\"),\n    x = \"Hours Worked\",\n    y = \"Daily Earnings ($)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The plot is a straight line with positive slope (each extra hour adds \\(\\$15\\)). The \\(y\\)-intercept is \\(\\$50\\) (the bonus when \\(h=0\\)).\n\n\n\n9.3.2 2.2 Polynomial Functions\nA function \\(f\\) of the form \\[\nf(x) = a_n x^n + a_{n-1} x^{n-1} + \\cdots + a_1 x + a_0\n\\] is called a polynomial function of degree \\(n\\), where \\(a_n, a_{n-1}, \\ldots, a_1, a_0\\) are real numbers called coefficients and \\(a_n \\neq 0\\).\nExamples of polynomial functions:\n\nDegree 0 (constant): \\(f(x) = 5\\)\nDegree 1 (linear): \\(f(x) = 3x + 2\\)\nDegree 2 (quadratic): \\(f(x) = 2x^2 - x + 1\\)\nDegree 3 (cubic): \\(f(x) = x^3 - 4x^2 + x - 6\\)\nDomain (any polynomial): all real numbers.\nRange: depends on the polynomial. For quadratics, the range starts at the vertex (minimum if it opens up, maximum if it opens down) and extends to \\(\\infty\\) or \\(-\\infty\\) accordingly.\n\nWe’ll focus on the quadratic \\[\nf(x) = x^2 - 4x + 3.\n\\]\nThe next code block plots this quadratic. Look for the “U” shape and where it crosses the \\(x\\)-axis.\n\n\nCode\n# Plotting a quadratic function: f(x) = x^2 - 4x + 3\n# What this code does: computes y for a sequence of x-values and plots the quadratic with a LaTeX title.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nx &lt;- seq(-2, 6, by = 0.1)\ny &lt;- x^2 - 4*x + 3\ndf_quad &lt;- data.frame(x, y)\n\nggplot(df_quad, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"Quadratic Function: $f(x) = x^2 - 4x + 3$\"),\n    x = \"x\", y = \"f(x)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: This parabola opens upward (coefficient of \\(x^2\\) is positive). It crosses the \\(x\\)-axis where \\(x^2 - 4x + 3 = 0\\), i.e., at \\(x=1\\) and \\(x=3\\). The vertex occurs at \\(x = -\\tfrac{b}{2a} = 2\\), with \\(f(2) = -1\\), so the range is \\([-1, \\infty)\\).\n\n\n\n9.3.3 2.3 Exponential Functions\nExponential functions model growth or decay: \\[\nf(x) = a e^{b x}.\n\\]\n\nIf \\(b &gt; 0\\), the function shows growth.\nIf \\(b &lt; 0\\), the function shows decay.\nDomain: all real numbers.\nRange: positive real numbers (\\(y &gt; 0\\)).\n\nThe next code block plots an exponential growth curve. Notice how the rate of increase accelerates as \\(x\\) grows.\n\n\nCode\n# Plotting an exponential growth function: f(x) = 2e^(0.8x)\n# What this code does: computes an exponential curve and plots it with a LaTeX-rendered title.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nx &lt;- seq(0, 5, by = 0.1)\ny &lt;- 2 * exp(0.8 * x)\ndf_exp &lt;- data.frame(x, y)\n\nggplot(df_exp, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"Exponential Function: $f(x) = 2e^{0.8x}$\"),\n    x = \"x\", y = \"f(x)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: Exponential growth curves rise slowly at first and then faster over time. Outputs are always positive (they never touch or cross \\(y=0\\)).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#functions-and-data",
+    "href": "lecture1.html#functions-and-data",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.4 3. Functions and Data",
+    "text": "9.4 3. Functions and Data\nFunctions are not just abstract formulas—they connect directly to datasets. For example, if we want to understand how study time relates to exam scores, we can model that relationship with a simple linear function fit to the data.\nThe next code block simulates a small dataset (study time and exam score), plots the points in black, and overlays a best-fit regression line (also black).\n\n\nCode\n# Simulate a small dataset and fit a linear model to visualize a data relationship\n# What this code does: generates noisy linear data, plots points, and overlays an LM fit (with explicit formula).\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nset.seed(123)                     # for reproducibility\nstudy_time &lt;- seq(0, 10, by = 1)  # hours studied\nexam_score &lt;- 50 + 5 * study_time + rnorm(11, mean = 0, sd = 5)\n\ndf &lt;- data.frame(study_time, exam_score)\n\nggplot(df, aes(x = study_time, y = exam_score)) +\n  geom_point(color = \"black\", size = 1) +\n  geom_smooth(method = \"lm\", formula = y ~ x, se = FALSE, color = \"black\", linewidth = 1) +\n  labs(\n    title = \"Exam Scores vs. Study Time\",\n    x = \"Study Time (hours)\", y = \"Exam Score\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The fitted line summarizes the average trend: each additional hour of study is associated with an estimated increase in score (the slope). Scatter around the line reflects other factors and noise.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#worked-numerical-example-quick",
+    "href": "lecture1.html#worked-numerical-example-quick",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.5 4. Worked Numerical Example (Quick)",
+    "text": "9.5 4. Worked Numerical Example (Quick)\nWhy this matters. Before we dive into limits and derivatives, it’s helpful to practice moving between a formula, an input, and a numeric output. This builds intuition for how inputs drive outputs and sets up the idea of rate of change in the next lecture.\nLet’s evaluate three functions at \\(x=2\\):\n\nLinear: \\(f(x)=2x+3 \\Rightarrow f(2)=2(2)+3=7\\).\nQuadratic: \\(q(x)=x^2-4x+3 \\Rightarrow q(2)=4-8+3=-1\\).\nExponential: \\(g(x)=2e^{0.8x} \\Rightarrow g(2)=2e^{1.6}\\approx 2(4.953)\\approx 9.906\\).\n\nThese quick calculations reinforce how to interpret a function and check values against a graph.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#why-functions-matter-in-data-science",
+    "href": "lecture1.html#why-functions-matter-in-data-science",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.6 5. Why Functions Matter in Data Science",
+    "text": "9.6 5. Why Functions Matter in Data Science\n\nFunctions model real-world processes (e.g., disease spread, consumer behavior).\nFunctions help us predict future values (e.g., forecasting sales).\nFunctions form the basis of machine learning algorithms, where complex relationships are built from simpler ones.\nFunctions help us understand rates of change, a key bridge to derivatives and optimization.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#practice-problems",
+    "href": "lecture1.html#practice-problems",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.7 Practice Problems",
+    "text": "9.7 Practice Problems\n\nWrite down a real-world example of a linear relationship in data science. Identify the slope and intercept.\nSketch or plot the polynomial function \\(f(x) = x^2 - 2x - 3\\). Where does it cross the \\(x\\)-axis?\nSuppose a population grows according to \\(P(t) = 100 e^{0.3t}\\). Compute \\(P(5)\\) (population after 5 time units).\nUsing R, simulate a dataset where y = 3x + 2 + random noise. Plot the data and add a regression line. Briefly describe what the slope represents in your context.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#in-this-lesson-you-learned-to",
+    "href": "lecture1.html#in-this-lesson-you-learned-to",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.8 In this lesson, you learned to",
+    "text": "9.8 In this lesson, you learned to\n\nExplain what functions are and why they’re essential in data science.\nIdentify and work with linear, polynomial, and exponential functions.\nCreate and interpret graphical representations of functions using R.\nConnect function concepts to real-world data science applications.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture1.html#coming-up",
+    "href": "lecture1.html#coming-up",
+    "title": "9  Lecture 1: Functions and Their Role in Data Science",
+    "section": "9.9 Coming Up",
+    "text": "9.9 Coming Up\nIn our next lecture, we will introduce the concepts of limits and continuity. These ideas help us understand what happens as functions approach specific points, and they set the stage for understanding derivatives—the central tool of calculus.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Lecture 1: Functions and Their Role in Data Science</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html",
+    "href": "lecture2.html",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "",
+    "text": "10.1 Introduction\nIn this lesson we build a practical foundation for limits and continuity—the ideas that prepare us for derivatives. Rather than proofs, we focus on intuition, pictures, and short computations you can run in R. Limits capture what a function is approaching near a point (even if it is not defined there), while continuity captures when a function has no breaks, jumps, or holes.\nWe will use tables and plots to see how functions behave near interesting points, interpret one‑sided limits, and spot common discontinuities (removable holes, jumps, vertical asymptotes). These skills will matter later when we reason about rates of change and when we choose appropriate models or transformations for data.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#intuition-for-limits",
+    "href": "lecture2.html#intuition-for-limits",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.2 1. Intuition for Limits",
+    "text": "10.2 1. Intuition for Limits\nA limit describes the value a function approaches as \\(x\\) gets close to some point (from the left, from the right, or from both sides). Even if \\(f(c)\\) is undefined (or defined oddly), the limit \\(\\lim\\limits_{x\\to c} f(x)\\) can still exist.\n\n10.2.1 1.1 Numerical Approach (Tables)\nA simple way to build intuition is to compute values near the point. Consider \\[\nf(x) = \\frac{x^2 - 1}{x - 1},\n\\] which is undefined at \\(x=1\\) but simplifies to \\(f(x) = x + 1\\) for \\(x \\neq 1\\).\nThe code below creates a small table of \\(x\\)‑values near 1 and the corresponding \\(f(x)\\) values. It helps us see what \\(f(x)\\) is approaching as \\(x\\to 1\\).\n\n\nCode\n# Purpose: Build a small table of x values near 1 and compute f(x) = (x^2 - 1)/(x - 1).\n# This illustrates how a table can suggest the limit even if the function is undefined at x=1.\n\n# Define f(x) carefully to avoid dividing by zero\nf &lt;- function(x) {\n  # For x exactly 1, return NA to reflect the hole (undefined)\n  ifelse(abs(x - 1) &lt; .Machine$double.eps, NA_real_, (x^2 - 1) / (x - 1))\n}\n\n# Choose points approaching 1 from the left and right\nx_vals &lt;- c(0.9, 0.99, 0.999, 1, 1.001, 1.01, 1.1)\ny_vals &lt;- f(x_vals)\n\n# Assemble a small data frame\ntbl &lt;- data.frame(x = x_vals, `f(x)` = y_vals)\ntbl\n\n\n      x  f.x.\n1 0.900 1.900\n2 0.990 1.990\n3 0.999 1.999\n4 1.000    NA\n5 1.001 2.001\n6 1.010 2.010\n7 1.100 2.100\n\n\nKey Insight: The table suggests \\(f(x)\\) is near \\(2\\) as \\(x \\to 1\\) from both sides. That is, \\(\\lim\\limits_{x\\to 1} \\dfrac{x^2-1}{x-1} = 2\\), even though \\(f(1)\\) is undefined.\n\n\n10.2.2 1.2 Graphical Approach (One‑Sided Limits)\nWe can also inspect left‑hand and right‑hand behavior. Consider the piecewise function \\[\ng(x) = \\begin{cases}\nx^2, & x &lt; 0, \\\\\n2x + 1, & x \\ge 0.\n\\end{cases}\n\\] The left‑hand limit at 0 is \\(\\lim\\limits_{x\\to 0^-} g(x) = 0\\), while the right‑hand limit is \\(\\lim\\limits_{x\\to 0^+} g(x) = 1\\). Since they differ, \\(\\lim\\limits_{x\\to 0} g(x)\\) does not exist.\nThe code below plots \\(g(x)\\) near 0 and marks the endpoints to highlight one‑sided limits.\n\n\nCode\n# Purpose: Plot a piecewise function g(x) to visualize one-sided limits at x=0.\n# We'll draw each piece and add an open/closed marker at x=0 to show the mismatch.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Create data for two pieces\nx_left  &lt;- seq(-2, 0, by = 0.01)\ny_left  &lt;- x_left^2\nx_right &lt;- seq(0, 2, by = 0.01)\ny_right &lt;- 2 * x_right + 1\n\ndf_left  &lt;- data.frame(x = x_left,  y = y_left)\ndf_right &lt;- data.frame(x = x_right, y = y_right)\n\n# Base plot with both pieces in black\np &lt;- ggplot() +\n  geom_line(data = df_left,  aes(x, y), color = \"black\", linewidth = 1) +\n  geom_line(data = df_right, aes(x, y), color = \"black\", linewidth = 1) +\n  # Add open circle at (0, 0) for the left piece (limit from the left)\n  geom_point(aes(x = 0, y = 0), color = \"black\", shape = 1, size = 3) +\n  # Add closed circle at (0, 1) for the right piece (function value at 0)\n  geom_point(aes(x = 0, y = 1), color = \"black\", shape = 16, size = 2) +\n  labs(\n    title = TeX(\"One-Sided Limits for $g(x)$ at $x=0$\"),\n    x = \"x\", y = \"g(x)\"\n  )\np\n\n\n\n\n\n\n\n\n\nKey Insight: The left‑hand and right‑hand limits are different (0 vs 1), so the two‑sided limit does not exist at \\(x=0\\). One‑sided limits help diagnose whether a function is “coming together” at a point.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#continuity-informal",
+    "href": "lecture2.html#continuity-informal",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.3 2. Continuity (Informal)",
+    "text": "10.3 2. Continuity (Informal)\nInformally, a function is continuous at \\(x=c\\) if three things happen smoothly at once:\n\n\\(f(c)\\) is defined (no hole at \\(x=c\\)),\n\\(\\lim\\limits_{x\\to c} f(x)\\) exists (left and right agree),\nand the limit equals the function value: \\(\\lim\\limits_{x\\to c} f(x) = f(c)\\).\n\nCommon ways continuity can fail:\n\nRemovable discontinuity (hole): limit exists but \\(f(c)\\) is missing or mismatched.\nJump discontinuity: left and right limits exist but are different.\nInfinite/vertical asymptote: values blow up near \\(c\\).\n\n\n10.3.1 2.1 Removable Discontinuity (Hole) vs. Mismatch\nConsider \\[\nh(x) = \\frac{x^2 - 4}{x - 2},\\quad x \\ne 2, \\qquad \\text{and define } h(2) = 5.\n\\] For \\(x \\ne 2\\), \\(h(x)\\) simplifies to \\(x + 2\\), so \\(\\lim\\limits_{x\\to 2} h(x) = 4\\). But \\(h(2) = 5\\), so \\(h\\) is not continuous at \\(x=2\\) (the limit and function value disagree).\nThe code below plots \\(h(x)\\) as the line \\(y=x+2\\) with a hole at \\(x=2\\), and adds the mismatched filled point \\((2,5)\\).\n\n\nCode\n# Purpose: Visualize a removable discontinuity with a mismatched function value.\n# Fix: Use annotate(\"point\", ...) for single-point layers so they don't inherit the 401-row data.\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Grid of x values (the line y = x + 2)\nx_vals &lt;- seq(0, 4, by = 0.01)\ny_vals &lt;- x_vals + 2\ndf_line &lt;- data.frame(x = x_vals, y = y_vals)\n\nggplot(df_line, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  annotate(\"point\", x = 2, y = 4, shape = 1, color = \"black\", size = 3) +  # open circle (the hole)\n  annotate(\"point\", x = 2, y = 5, shape = 16, color = \"black\", size = 2) + # filled point (mismatch)\n  labs(\n    title = TeX(\"Removable Discontinuity: $h(x)=\\\\frac{x^2-4}{x-2}$ with $h(2)=5$\"),\n    x = \"x\", y = \"h(x)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The limit at \\(x=2\\) is \\(4\\) (what the line approaches), but the function value is \\(5\\). Because \\(\\lim\\limits_{x\\to 2} h(x) \\ne h(2)\\), \\(h\\) is not continuous at \\(x=2\\). If we redefined \\(h(2)\\) to be \\(4\\), continuity would be restored (the “hole” would be filled correctly).\n\n\n10.3.2 2.2 Asymptotic Behavior and Continuity on Domains\nLimits also describe end behavior. For instance, the logistic function \\[\n\\sigma(x) = \\frac{1}{1 + e^{-x}}\n\\] satisfies \\(\\lim\\limits_{x\\to -\\infty} \\sigma(x) = 0\\) and \\(\\lim\\limits_{x\\to +\\infty} \\sigma(x) = 1\\). It is continuous for all real \\(x\\), with horizontal asymptotes at \\(y=0\\) and \\(y=1\\).\nThe code below plots \\(\\sigma(x)\\) and shows its S‑shape and asymptotes.\n\n\nCode\n# Purpose: Plot the logistic function to illustrate continuous behavior and horizontal asymptotes.\n# Fix: Properly escape LaTeX backslashes (\\\\sigma, \\\\frac, \\\\pm, \\\\infty) inside TeX().\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Create x and y for the logistic function\nx &lt;- seq(-8, 8, by = 0.05)\nsigma &lt;- 1 / (1 + exp(-x))\ndf_sig &lt;- data.frame(x = x, y = sigma)\n\nggplot(df_sig, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"Logistic Function $\\\\sigma(x)=\\\\frac{1}{1+e^{-x}}$ (Limits at $\\\\pm\\\\infty$)\"),\n    x = \"x\",\n    y = TeX(\"$\\\\sigma(x)$\")\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The logistic is smooth and continuous for all \\(x\\). Its limits at infinity describe the long‑run behavior (\\(0\\) and \\(1\\)), which is useful for modeling probabilities or bounded responses.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#computing-limits-safely-when-and-how",
+    "href": "lecture2.html#computing-limits-safely-when-and-how",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.4 3. Computing Limits Safely (When and How)",
+    "text": "10.4 3. Computing Limits Safely (When and How)\nIn many practical cases you can compute limits by direct substitution if the function is continuous at that point (e.g., polynomials, exponentials, logistics, sums/products/quotients of continuous functions where denominators are nonzero). When direct substitution yields an indeterminate form like \\(\\tfrac{0}{0}\\), try to algebraically simplify (e.g., factor, cancel), then substitute.\n\n10.4.1 3.1 Example: Cancel a Factor (Algebraic Simplification)\nConsider \\[\n\\lim\\limits_{x\\to 1} \\frac{x^2 - 1}{x - 1}.\n\\] Direct substitution gives \\(\\tfrac{0}{0}\\) (indeterminate). Factor the numerator and cancel \\(x-1\\) (for \\(x\\ne 1\\)): \\[\n\\frac{(x-1)(x+1)}{x-1} = x+1,\\quad x\\ne 1.\n\\] Now substitute \\(x=1\\) in the simplified expression to get the limit: \\(2\\).\nThe code below compares the original expression and the simplified one by evaluating near \\(x=1\\) and plotting the simplified line with a hole at \\(x=1\\).\n\n\nCode\n# Purpose: Compare original vs. simplified expressions near x=1 and visualize the removable hole.\n# Fix: Use annotate(\"point\", ...) for the single marker so it doesn't inherit the full data frame.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Original and simplified definitions\norig &lt;- function(x) ifelse(abs(x - 1) &lt; .Machine$double.eps, NA_real_, (x^2 - 1) / (x - 1))\nsimp &lt;- function(x) x + 1  # valid for all x; note the original is undefined at x=1\n\n# Evaluate near x=1\nx_near &lt;- seq(0.8, 1.2, by = 0.01)\ndf_comp &lt;- data.frame(\n  x = x_near,\n  orig = orig(x_near),\n  simp = simp(x_near)\n)\n\n# Plot the simplified line with an open circle at x=1 (y=2)\nggplot(df_comp, aes(x, simp)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  annotate(\"point\", x = 1, y = 2, shape = 1, color = \"black\", size = 3) +\n  labs(\n    title = TeX(\"Limit via Simplification: $\\\\lim_{x\\\\to 1}\\\\frac{x^2-1}{x-1} = 2$\"),\n    x = \"x\", y = \"y\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The graph shows the line \\(y=x+1\\) with a hole at \\(x=1\\). The limit is the \\(y\\)‑value that the curve approaches there (\\(2\\)), even though the original expression is undefined at \\(x=1\\).\n\n\n10.4.2 3.2 Numerical Limits Without Algebra (When Needed)\nSometimes you only have a black‑box function (e.g., a trained model or a loss function). A small symmetric sequence approaching \\(c\\) can give a reliable numerical limit estimate.\n\n\nCode\n# Purpose: Estimate a limit numerically from symmetric x-values around c.\n# We'll use f(x)=sin(x)/x at c=0 (well-known limit equals 1), using radians.\n\n# Define f(x) with a safe value at exactly 0\nf_safe &lt;- function(x) ifelse(abs(x) &lt; .Machine$double.eps, 1, sin(x) / x)\n\n# Symmetric points approaching 0\nxpts &lt;- c(-0.5, -0.2, -0.1, -0.05, 0, 0.05, 0.1, 0.2, 0.5)\nypts &lt;- f_safe(xpts)\n\ndata.frame(x = xpts, `f(x)` = ypts)\n\n\n      x      f.x.\n1 -0.50 0.9588511\n2 -0.20 0.9933467\n3 -0.10 0.9983342\n4 -0.05 0.9995834\n5  0.00 1.0000000\n6  0.05 0.9995834\n7  0.10 0.9983342\n8  0.20 0.9933467\n9  0.50 0.9588511\n\n\nKey Insight: The values cluster around \\(1\\) as \\(x\\to 0\\), matching the known limit \\(\\lim\\limits_{x\\to 0} \\dfrac{\\sin x}{x} = 1\\). Numerical checks are especially handy when algebraic forms are messy or unavailable.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#why-limits-continuity-matter-in-data-science",
+    "href": "lecture2.html#why-limits-continuity-matter-in-data-science",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.5 4. Why Limits & Continuity Matter in Data Science",
+    "text": "10.5 4. Why Limits & Continuity Matter in Data Science\n\nModeling choices: Knowing where functions are continuous helps avoid undefined expressions (e.g., dividing by near‑zero features) and informs safe transformations (logs require positive inputs; beware of zeros/negatives).\nStability of algorithms: Optimization methods and gradient‑based learning assume reasonably smooth behavior; discontinuities can cause instability.\nAsymptotics & saturation: Limits at \\(\\pm\\infty\\) describe long‑run behavior (e.g., logits saturate near 0/1), guiding interpretation of predictions and regularization.\nDiagnostics: Plots and small tables near “problem points” can reveal holes, jumps, or exploding values before they derail an analysis.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#practice-problems",
+    "href": "lecture2.html#practice-problems",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.6 Practice Problems",
+    "text": "10.6 Practice Problems\n\nUse a small table (5–7 points) to estimate \\(\\lim\\limits_{x\\to 3} \\dfrac{x^2 - 9}{x - 3}\\). What do you suspect the exact limit is, and why?\nConsider the piecewise function \\(p(x) = \\begin{cases} 2 - x, & x &lt; 1, \\\\ x^2, & x \\ge 1. \\end{cases}\\)\n\nCompute \\(\\lim\\limits_{x\\to 1^-} p(x)\\) and \\(\\lim\\limits_{x\\to 1^+} p(x)\\).\n\nDoes \\(\\lim\\limits_{x\\to 1} p(x)\\) exist? Is \\(p\\) continuous at \\(x=1\\)? Explain.\n\nLet \\(q(x) = \\dfrac{x^2 - 4x + 4}{x - 2}\\) for \\(x \\ne 2\\).\n\nWhat is \\(\\lim\\limits_{x\\to 2} q(x)\\)?\n\nDefine a value \\(q(2)\\) that would make \\(q\\) continuous at \\(x=2\\).\n\nPlot the logistic function \\(\\sigma(x)=\\dfrac{1}{1+e^{-x}}\\) on \\([-8,8]\\) and mark approximate horizontal asymptotes on your graph. Briefly describe the practical meaning of those limits.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#in-this-lesson-you-learned-to",
+    "href": "lecture2.html#in-this-lesson-you-learned-to",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.7 In this lesson, you learned to",
+    "text": "10.7 In this lesson, you learned to\n\nUse tables and plots to build intuition for limits near a point.\nDistinguish one‑sided limits and diagnose when two‑sided limits fail.\nSpot common discontinuities (removable holes, jumps, asymptotes) and relate them to continuity.\nCompute simple limits by substitution when safe, or by algebraic simplification or numerical estimation when needed.\nConnect limit/continuity ideas to modeling choices, algorithm stability, and interpretation.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture2.html#coming-up",
+    "href": "lecture2.html#coming-up",
+    "title": "10  Lecture 2: Limits and Continuity",
+    "section": "10.8 Coming Up",
+    "text": "10.8 Coming Up\nNext time we connect limits to derivatives as rates of change. We will compute basic derivatives, relate slopes to sensitivity, and practice visualizing change on real‑world data.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Lecture 2: Limits and Continuity</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html",
+    "href": "lecture3.html",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "",
+    "text": "11.1 Introduction\nIn this lesson we make the leap from limits to derivatives. The derivative answers a simple, powerful question: How fast is a quantity changing right now? Visually, it is the slope of the tangent line to a curve at a point. Practically, it tells us sensitivity: how much the output changes for a tiny change in the input.\nWe will keep things hands-on and visual. You will see secant lines become tangent lines, compute numerical derivatives on data, and compare a numerical derivative with a known analytic derivative. We will finish with the few rules you actually need today and a quick verification in R.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#from-limits-to-derivatives-intuition",
+    "href": "lecture3.html#from-limits-to-derivatives-intuition",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.2 1. From Limits to Derivatives (Intuition)",
+    "text": "11.2 1. From Limits to Derivatives (Intuition)\nA derivative at \\(x_0\\) is the limit of slopes of nearby secant lines: \\[\nf'(x_0) = \\lim_{h\\to 0} \\frac{f(x_0+h) - f(x_0)}{h}.\n\\] When this limit exists, it gives the instantaneous rate of change of \\(f\\) at \\(x_0\\).\n\n11.2.1 1.1 Secant \\(\\to\\) Tangent (Visual)\nWe illustrate the idea with \\(f(x)=x^2\\) at \\(x_0=2\\). We draw the curve, one secant line (for a modest \\(h\\)), and a near‑tangent line (for a very small \\(h\\)). Different line types (solid/dashed/dotted) keep everything black while still distinguishable.\nThe code below builds these elements and plots them. Focus on how the secant slope approaches the tangent slope.\n\n\nCode\n# Purpose: Visualize derivative as the limit of secant slopes for f(x)=x^2 at x0=2.\n# We draw the curve, a secant line (h=0.5, dashed), and a near-tangent line (very small h, dotted).\n# All lines are black (linewidth=1) and we annotate the point (2, f(2)).\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Function and point of interest\nf &lt;- function(x) x^2\nx0 &lt;- 2\nf0 &lt;- f(x0)\n\n# Secant line using h = 0.5\nh_sec &lt;- 0.5\ns_sec &lt;- (f(x0 + h_sec) - f0) / h_sec               # secant slope\nb_sec &lt;- f0 - s_sec * x0                             # secant intercept\n\n# Near-tangent using a very small symmetric step\nh_tan &lt;- 1e-4\ns_tan &lt;- (f(x0 + h_tan) - f(x0 - h_tan)) / (2 * h_tan)  # central difference approximation\nb_tan &lt;- f0 - s_tan * x0\n\n# Data for the curve\nx &lt;- seq(0, 4, by = 0.01)\ndf_curve &lt;- data.frame(x = x, y = f(x))\n\nggplot(df_curve, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +                                    # curve\n  geom_abline(slope = s_sec, intercept = b_sec, linetype = \"dashed\", color = \"black\", linewidth = 1) +   # secant\n  geom_abline(slope = s_tan, intercept = b_tan, linetype = \"dotted\", color = \"black\", linewidth = 1) +   # near-tangent\n  annotate(\"point\", x = x0, y = f0, shape = 16, color = \"black\", size = 2) +     # the point (2,4)\n  labs(\n    title = TeX(\"Secant $\\to$ Tangent on $f(x)=x^2$ at $x_0=2$\"),\n    x = \"x\", y = \"f(x)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The dashed secant line and the dotted near‑tangent line become indistinguishable as \\(h\\to 0\\). For \\(f(x)=x^2\\), the true derivative is \\(f'(x)=2x\\), so at \\(x_0=2\\) the tangent slope is \\(4\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#numerical-derivatives-on-data-finite-differences",
+    "href": "lecture3.html#numerical-derivatives-on-data-finite-differences",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.3 2. Numerical Derivatives on Data (Finite Differences)",
+    "text": "11.3 2. Numerical Derivatives on Data (Finite Differences)\nReal data rarely come with a clean formula. A practical way to estimate derivatives is a finite difference. The centered difference \\[\nf'(x_i) \\approx \\frac{f(x_{i+1}) - f(x_{i-1})}{x_{i+1} - x_{i-1}}\n\\] is usually more accurate than forward/backward differences, assuming reasonably even spacing.\n\n11.3.1 2.1 Example with Noisy Quadratic Data\nWe simulate data from \\(y=\\frac{1}{2}x^2\\) with noise and estimate the derivative. The true derivative is \\(y'(x)=x\\), which we overlay for reference.\nThe code below generates the data, computes centered differences for interior points, and plots the estimated slope (points) along with the true derivative (line).\n\n\nCode\n# Purpose: Estimate a derivative from noisy data using centered finite differences and compare to the known truth.\n# We simulate y = 0.5 x^2 + noise where the true derivative is y' = x.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nset.seed(42)\nx &lt;- seq(0, 10, by = 0.5)\ny &lt;- 0.5 * x^2 + rnorm(length(x), sd = 2)\n\n# Centered difference for interior points (i = 2..(n-1))\nx_mid &lt;- x[2:(length(x)-1)]\ndy    &lt;- y[3:length(y)] - y[1:(length(y)-2)]\ndx    &lt;- x[3:length(x)] - x[1:(length(x)-2)]\nslope_est &lt;- dy / dx\n\n# True derivative for comparison at the midpoints\nslope_true &lt;- x_mid\n\ndf_deriv &lt;- data.frame(x = x_mid, est = slope_est, truth = slope_true)\n\nggplot(df_deriv, aes(x)) +\n  geom_point(aes(y = est), color = \"black\", size = 1) +                      # estimated derivative (points)\n  geom_line(aes(y = truth), color = \"black\", linewidth = 1) +                # true derivative line\n  labs(\n    title = TeX(\"Estimating $f'(x)$ on Noisy Data (True $f'(x)=x$)\"),\n    x = \"x\", y = \"slope\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: Even with noise, the centered‑difference estimates (points) track the true derivative (line) reasonably well. More data, less noise, or smoothing can further stabilize estimates.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#analytic-vs.-numeric-derivative-on-a-smooth-function",
+    "href": "lecture3.html#analytic-vs.-numeric-derivative-on-a-smooth-function",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.4 3. Analytic vs. Numeric Derivative on a Smooth Function",
+    "text": "11.4 3. Analytic vs. Numeric Derivative on a Smooth Function\nWhen you know a formula, you can check a numerical derivative against the analytic derivative. For \\(g(x)=\\sin x\\), the analytic derivative is \\(g'(x)=\\cos x\\).\nThe code below compares a centered‑difference estimate to \\(\\cos x\\) and reports the maximum absolute error.\n\n\nCode\n# Purpose: Compare a centered-difference derivative to the analytic derivative for g(x)=sin x.\n# We use a fine grid and small step to keep numerical error modest.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\ng  &lt;- function(x) sin(x)\ngp &lt;- function(x) cos(x)   # analytic derivative\n\n# Grid and step\nx &lt;- seq(0, 2*pi, by = 0.01)\nh &lt;- 0.005\n\n# Centered difference derivative (same length as x by padding endpoints with NA)\ng_forward  &lt;- g(pmin(x + h, max(x)))\ng_backward &lt;- g(pmax(x - h, min(x)))\ng_num &lt;- (g_forward - g_backward) / (2*h)\ng_true &lt;- gp(x)\n\n# Error summary\nmax_abs_err &lt;- max(abs(g_num - g_true), na.rm = TRUE)\ndata.frame(MaxAbsError = max_abs_err)\n\n\n  MaxAbsError\n1   0.5000035\n\n\nCode\n# Plot: analytic (line) vs numeric (points)\ndf &lt;- data.frame(x = x, analytic = g_true, numeric = g_num)\n\nggplot(df, aes(x)) +\n  geom_line(aes(y = analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = numeric), color = \"black\", size = 0.6) +\n  labs(\n    title = TeX(\"Analytic vs Numeric Derivative for $g(x)=\\\\sin x$ (analytic $=\\\\cos x$)\"),\n    x = \"x\", y = \"derivative\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: On smooth functions, centered differences with a small step can approximate the true derivative very well. The reported max error quantifies the approximation quality.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#rules-you-actually-need-today-and-a-quick-check",
+    "href": "lecture3.html#rules-you-actually-need-today-and-a-quick-check",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.5 4. Rules You Actually Need Today (and a Quick Check)",
+    "text": "11.5 4. Rules You Actually Need Today (and a Quick Check)\nFor many models and transformations you’ll use immediately, these rules carry you far:\n\nPower rule: if \\(f(x)=x^n\\) then \\(f'(x)=n x^{n-1}\\) (works for integer \\(n\\); later we generalize).\nConstant multiple: \\((c\\,f(x))' = c\\,f'(x)\\).\nSum/Difference: \\((f \\pm g)' = f' \\pm g'\\).\nLinears: if \\(f(x)=ax+b\\) then \\(f'(x)=a\\) (constant slope).\n\n\n11.5.1 4.1 Quick Verification in R (Polynomial)\nWe check \\(f(x)=3x^3 - 5x^2 + 2x - 7\\) against its hand‑derived derivative \\(f'(x)=9x^2 - 10x + 2\\) using a centered difference.\n\n\nCode\n# Purpose: Verify a hand-derived derivative against a numerical derivative on a grid.\n# We compare f'(x) = 9x^2 - 10x + 2 to a centered-difference estimate of f(x)=3x^3 - 5x^2 + 2x - 7.\n\n# Define f and manual derivative fp\nf  &lt;- function(x) 3*x^3 - 5*x^2 + 2*x - 7\nfp &lt;- function(x) 9*x^2 - 10*x + 2\n\n# Grid and step\nx &lt;- seq(-3, 3, by = 0.05)\nh &lt;- 0.025\n\n# Centered difference estimate\nf_forward  &lt;- f(pmin(x + h, max(x)))\nf_backward &lt;- f(pmax(x - h, min(x)))\nf_num &lt;- (f_forward - f_backward) / (2*h)\n\n# Error summary table (show a few rows)\nerr &lt;- abs(f_num - fp(x))\nhead(data.frame(x = x, Numeric = f_num, Manual = fp(x), AbsError = err), 6)\n\n\n      x   Numeric   Manual  AbsError\n1 -3.00  56.10094 113.0000 56.899063\n2 -2.95 109.82438 109.8225  0.001875\n3 -2.90 106.69187 106.6900  0.001875\n4 -2.85 103.60437 103.6025  0.001875\n5 -2.80 100.56187 100.5600  0.001875\n6 -2.75  97.56437  97.5625  0.001875\n\n\nKey Insight: The numeric derivative closely matches the manual derivative across the grid (tiny absolute errors). This gives confidence when you apply rules to build derivatives of common models.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#practice-problems",
+    "href": "lecture3.html#practice-problems",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.6 Practice Problems",
+    "text": "11.6 Practice Problems\n\nUsing \\(f(x)=x^2\\), compute the secant slope between \\(x=2\\) and \\(x=2.2\\). Then estimate the tangent slope at \\(x=2\\) using \\(h=0.001\\).\nSimulate \\(y=\\tfrac{1}{2}x^2 + \\text{noise}\\) for \\(x \\in [0,10]\\) and estimate \\(y'(x)\\) with centered differences. Briefly discuss how noise level affects your estimate.\nFor \\(g(x)=\\sin x\\), try a larger step (say \\(h=0.05\\)) in the numeric derivative. How does the max absolute error change compared to a smaller \\(h\\)?\nUse the power, constant multiple, and sum rules to differentiate \\(p(x)=4x^4 - 3x^3 + 2x - 9\\). Check your result numerically on a grid (centered difference).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#in-this-lesson-you-learned-to",
+    "href": "lecture3.html#in-this-lesson-you-learned-to",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.7 In this lesson, you learned to",
+    "text": "11.7 In this lesson, you learned to\n\nInterpret the derivative as an instantaneous rate of change and as a tangent slope.\nVisualize secants approaching a tangent and compute numerical derivatives from data.\nCompare numeric derivatives to analytic ones and reason about approximation error.\nApply the essential derivative rules you’ll use most in practice.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture3.html#coming-up",
+    "href": "lecture3.html#coming-up",
+    "title": "11  Lecture 3: Derivatives as Rates of Change",
+    "section": "11.8 Coming Up",
+    "text": "11.8 Coming Up\nNext: Computing Derivatives of Complex Functions. We’ll extend today’s rules with the product and chain rules (in practical form), and compute partial derivatives for two‑variable functions used in modeling and optimization.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Lecture 3: Derivatives as Rates of Change</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html",
+    "href": "lecture4.html",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "",
+    "text": "12.1 Introduction\nToday we extend the basic derivative idea to combinations and compositions of functions you will actually meet in data work. We focus on the product rule, quotient rule, and chain rule, plus quick reminders for exponentials and logarithms. For two-variable models, we will peek at partial derivatives in a practical way.\nOur goal is simple: learn the rules, apply them to realistic examples, and verify results numerically in R. The emphasis remains on intuition and implementation, not formal proofs.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#the-rules-we-need-concise",
+    "href": "lecture4.html#the-rules-we-need-concise",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.2 1. The Rules We Need (Concise)",
+    "text": "12.2 1. The Rules We Need (Concise)\nLet \\(f\\) and \\(g\\) be differentiable where relevant.\n\nProduct rule: \\((f \\cdot g)'(x) = f'(x)\\,g(x) + f(x)\\,g'(x)\\).\nQuotient rule: \\(\\left( \\frac{f}{g} \\right)'(x) = \\frac{f'(x)\\,g(x) - f(x)\\,g'(x)}{\\big(g(x)\\big)^2}\\), with \\(g(x) \\ne 0\\).\nChain rule (composition): \\(\\big(f \\circ g\\big)'(x) = f'\\big(g(x)\\big)\\,g'(x)\\).\nExponentials: \\(\\frac{d}{dx}\\,e^{a x} = a e^{a x}\\); more generally \\(\\frac{d}{dx}\\,a^x = a^x\\ln a\\).\nLogarithm: \\(\\frac{d}{dx}\\,\\ln x = \\frac{1}{x}\\) for \\(x&gt;0\\).\n\nWe will use these to differentiate more complex expressions and then check with a numerical derivative as a sanity check.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#product-rule-in-action",
+    "href": "lecture4.html#product-rule-in-action",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.3 2. Product Rule in Action",
+    "text": "12.3 2. Product Rule in Action\n\n12.3.1 2.1 Worked Example and Numeric Check\nConsider \\(h(x) = x^2\\sin x\\). By the product rule, \\[\nh'(x) = 2x\\sin x + x^2\\cos x.\n\\]\nThe next code computes both formulas on a grid and compares them to a centered-difference estimate.\n\n\nCode\n# Purpose: Verify the product rule on h(x)=x^2 sin x by comparing analytic and numeric derivatives.\n# We compute h' = 2x sin x + x^2 cos x, and compare to a centered-difference derivative.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nh  &lt;- function(x) x^2 * sin(x)\nhp &lt;- function(x) 2*x*sin(x) + x^2*cos(x)  # product rule\n\n# Grid and numeric derivative via centered difference\nx &lt;- seq(0, 2*pi, by = 0.05)\nh_step &lt;- 0.025\nh_forward  &lt;- h(pmin(x + h_step, max(x)))\nh_backward &lt;- h(pmax(x - h_step, min(x)))\nh_num &lt;- (h_forward - h_backward) / (2*h_step)\n\ndf &lt;- data.frame(x = x, Analytic = hp(x), Numeric = h_num)\n\nggplot(df, aes(x)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"Product Rule on $h(x)=x^2\\\\sin x$: Analytic vs Numeric $h'(x)$\"),\n    x = \"x\", y = \"derivative\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The numeric derivative (points) closely tracks the analytic curve (line), confirming the product rule result for \\(h'(x)\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#quotient-rule-in-action",
+    "href": "lecture4.html#quotient-rule-in-action",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.4 3. Quotient Rule in Action",
+    "text": "12.4 3. Quotient Rule in Action\n\n12.4.1 3.1 Worked Example and Numeric Check\nLet \\[\nr(x) = \\frac{x^2 + 1}{x + 1},\\quad x \\ne -1.\n\\] Then \\[\nr'(x) = \\frac{(2x)(x+1) - (x^2+1)(1)}{(x+1)^2} = \\frac{x^2 + 2x - 1}{(x+1)^2}.\n\\]\nWe compare the analytic derivative to a numeric estimate; we omit a small window around \\(x=-1\\) to avoid the vertical asymptote.\n\n\nCode\n# Purpose: Verify the quotient rule on r(x)=(x^2+1)/(x+1) by comparing analytic and numeric derivatives.\n# We avoid x near -1 to prevent numerical instability.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nr  &lt;- function(x) (x^2 + 1) / (x + 1)\nrp &lt;- function(x) (x^2 + 2*x - 1) / (x + 1)^2\n\n# Grid excluding a window around -1\nx_full &lt;- seq(-4, 4, by = 0.02)\nx &lt;- x_full[abs(x_full + 1) &gt; 0.1]\n\n# Centered difference on the pruned grid\nstep &lt;- 0.01\nr_forward  &lt;- r(pmin(x + step, max(x)))\nr_backward &lt;- r(pmax(x - step, min(x)))\nr_num &lt;- (r_forward - r_backward) / (2*step)\n\ndf &lt;- data.frame(x = x, Analytic = rp(x), Numeric = r_num)\n\nggplot(df, aes(x)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"Quotient Rule on $r(x)=\\\\frac{x^2+1}{x+1}$: Analytic vs Numeric $r'(x)$\"),\n    x = \"x\", y = \"derivative\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: Away from the asymptote at \\(x=-1\\), the numeric and analytic derivatives align well. Near divisions by small denominators, numerical estimates can be unstable—plotting or masking those regions is wise.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#chain-rule-in-action",
+    "href": "lecture4.html#chain-rule-in-action",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.5 4. Chain Rule in Action",
+    "text": "12.5 4. Chain Rule in Action\n\n12.5.1 4.1 Worked Example and Numeric Check\nConsider \\(y(x) = e^{\\frac{1}{2}x^2}\\). Let \\(u(x)=\\frac{1}{2}x^2\\). Then \\[\ny'(x) = e^{u(x)}\\,u'(x) = e^{\\frac{1}{2}x^2}\\cdot x.\n\\]\nWe confirm this with a centered-difference derivative.\n\n\nCode\n# Purpose: Verify the chain rule on y(x)=exp(0.5 x^2) where y' = exp(0.5 x^2) * x.\n# We compare analytic vs numeric derivatives on a grid.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\ny  &lt;- function(x) exp(0.5 * x^2)\nyp &lt;- function(x) exp(0.5 * x^2) * x\n\nx &lt;- seq(-3, 3, by = 0.05)\nh &lt;- 0.025\ny_forward  &lt;- y(pmin(x + h, max(x)))\ny_backward &lt;- y(pmax(x - h, min(x)))\ny_num &lt;- (y_forward - y_backward) / (2*h)\n\ndf &lt;- data.frame(x = x, Analytic = yp(x), Numeric = y_num)\n\nggplot(df, aes(x)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"Chain Rule on $y(x)=e^{\\\\frac{1}{2}x^2}$: Analytic vs Numeric $y'(x)$\"),\n    x = \"x\", y = \"derivative\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The derivative of a composition multiplies the outer derivative (evaluated at the inner function) by the inner derivative. The numerical check validates \\(y'(x)=e^{\\frac{1}{2}x^2}x\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#quick-reminders-ex-and-ln-x",
+    "href": "lecture4.html#quick-reminders-ex-and-ln-x",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.6 5. Quick Reminders: \\(e^x\\) and \\(\\ln x\\)",
+    "text": "12.6 5. Quick Reminders: \\(e^x\\) and \\(\\ln x\\)\nThe derivative of \\(e^{a x}\\) is \\(a e^{a x}\\); the derivative of \\(\\ln x\\) is \\(\\frac{1}{x}\\) for \\(x&gt;0\\). The short code below verifies both on a grid.\n\n\nCode\n# Purpose: Sanity-check derivative identities for exp(ax) and ln(x) using numeric differences.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nf_exp  &lt;- function(x, a = 1.7) exp(a * x)\nfp_exp &lt;- function(x, a = 1.7) a * exp(a * x)\n\nf_ln  &lt;- function(x) log(x)\nfp_ln &lt;- function(x) 1 / x\n\nx1 &lt;- seq(-2, 2, by = 0.05)\nx2 &lt;- seq(0.2, 4, by = 0.05)  # x&gt;0 for log\n\nh &lt;- 0.025\n\n# exp(ax)\nnum_exp &lt;- (f_exp(pmin(x1 + h, max(x1))) - f_exp(pmax(x1 - h, min(x1)))) / (2*h)\ndf_exp &lt;- data.frame(x = x1, Analytic = fp_exp(x1), Numeric = num_exp)\n\n# ln x\nnum_ln &lt;- (f_ln(pmin(x2 + h, max(x2))) - f_ln(pmax(x2 - h, min(x2)))) / (2*h)\ndf_ln &lt;- data.frame(x = x2, Analytic = fp_ln(x2), Numeric = num_ln)\n\np1 &lt;- ggplot(df_exp, aes(x)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(title = TeX(\"Check: $\\\\frac{d}{dx}e^{a x} = a e^{a x}$\"), x = \"x\", y = \"derivative\")\n\np2 &lt;- ggplot(df_ln, aes(x)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(title = TeX(\"Check: $\\\\frac{d}{dx}\\\\ln x = \\\\frac{1}{x}$ (for $x&gt;0$)\"), x = \"x\", y = \"derivative\")\n\np1\n\n\n\n\n\n\n\n\n\nCode\np2\n\n\n\n\n\n\n\n\n\nKey Insight: For commonly used transformations (exponential and logarithm), the analytic and numeric derivatives match closely on standard ranges—useful for quick audits of model code or transformation pipelines.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#partial-derivatives-practical-peek",
+    "href": "lecture4.html#partial-derivatives-practical-peek",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.7 6. Partial Derivatives (Practical Peek)",
+    "text": "12.7 6. Partial Derivatives (Practical Peek)\nFor a function of two variables, \\(F(x,y)\\), the partial derivative with respect to \\(x\\) treats \\(y\\) as a constant, and vice versa. Consider \\[\nF(x,y) = x^2 y + e^{xy}.\n\\] Then \\[\nF_x(x,y) = 2xy + y e^{xy}, \\quad F_y(x,y) = x^2 + x e^{xy}.\n\\]\nA simple way to see a partial derivative is to fix one variable and compare numeric vs analytic derivatives in the other.\n\n\nCode\n# Purpose: Visualize partial derivatives by slicing F(x,y)=x^2 y + exp(x y).\n# We fix y=1 for F_x and x=1 for F_y and compare numeric vs analytic derivatives in 1D.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nF   &lt;- function(x, y) x^2 * y + exp(x * y)\nFx  &lt;- function(x, y) 2*x*y + y * exp(x * y)\nFy  &lt;- function(x, y) x^2 + x * exp(x * y)\n\n# Slice for F_x at y=1\ny_fix &lt;- 1\nx &lt;- seq(-2, 2, by = 0.05)\nh &lt;- 0.025\nF_forward  &lt;- F(pmin(x + h, max(x)), y_fix)\nF_backward &lt;- F(pmax(x - h, min(x)), y_fix)\nFx_num &lt;- (F_forward - F_backward) / (2*h)\n\ndf_fx &lt;- data.frame(x = x, Analytic = Fx(x, y_fix), Numeric = Fx_num)\n\n# Slice for F_y at x=1\nx_fix &lt;- 1\ny &lt;- seq(-2, 2, by = 0.05)\nF_forward_y  &lt;- F(x_fix, pmin(y + h, max(y)))\nF_backward_y &lt;- F(x_fix, pmax(y - h, min(y)))\nFy_num &lt;- (F_forward_y - F_backward_y) / (2*h)\n\ndf_fy &lt;- data.frame(y = y, Analytic = Fy(x_fix, y), Numeric = Fy_num)\n\np_x &lt;- ggplot(df_fx, aes(x)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(title = TeX(\"Partial in $x$: $F_x(x,1)$ vs numeric derivative\"), x = \"x\", y = \"slope\")\n\np_y &lt;- ggplot(df_fy, aes(y)) +\n  geom_line(aes(y = Analytic), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Numeric), color = \"black\", size = 1) +\n  labs(title = TeX(\"Partial in $y$: $F_y(1,y)$ vs numeric derivative\"), x = \"y\", y = \"slope\")\n\np_x\n\n\n\n\n\n\n\n\n\nCode\np_y\n\n\n\n\n\n\n\n\n\nKey Insight: Fixing one variable turns a surface into a 1D curve; the partial derivative becomes an ordinary derivative along that slice. The numeric and analytic results agree, reinforcing the formulas for \\(F_x\\) and \\(F_y\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#practice-problems",
+    "href": "lecture4.html#practice-problems",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.8 Practice Problems",
+    "text": "12.8 Practice Problems\n\nDifferentiate \\(h(x)=x^2 e^{3x}\\) using the product and chain rules. Check numerically on a grid.\nCompute \\(\\displaystyle r'(x)\\) for \\(r(x)=\\frac{\\ln x}{x^2}\\) (for \\(x&gt;0\\)). Simplify and verify numerically away from \\(x=0\\).\nLet \\(y(x) = \\ln\\big(5 + 2x^3\\big)\\). Use the chain rule to find \\(y'(x)\\) and compare to a numeric derivative.\nFor \\(F(x,y) = x e^{xy}\\), compute \\(F_x\\) and \\(F_y\\). Then fix \\(y=2\\) and compare your \\(F_x(x,2)\\) to a numeric derivative of \\(x \\mapsto F(x,2)\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#in-this-lesson-you-learned-to",
+    "href": "lecture4.html#in-this-lesson-you-learned-to",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.9 In this lesson, you learned to",
+    "text": "12.9 In this lesson, you learned to\n\nApply the product, quotient, and chain rules to differentiate composite expressions.\nVerify analytic derivatives with numeric differences as a practical sanity check.\nRecall quick derivatives for exponentials and logarithms and use them fluently.\nInterpret and compute partial derivatives by slicing multivariable functions.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture4.html#coming-up",
+    "href": "lecture4.html#coming-up",
+    "title": "12  Lecture 4: Computing Derivatives of Complex Functions",
+    "section": "12.10 Coming Up",
+    "text": "12.10 Coming Up\nNext time: Using Derivatives for Optimization. We will locate maxima/minima (critical points), connect derivatives to slope-based reasoning on data, and prepare for constrained problems and gradient-based search.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Lecture 4: Computing Derivatives of Complex Functions</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html",
+    "href": "lecture5.html",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "",
+    "text": "13.1 Introduction\nThis lesson connects derivatives to optimization—finding inputs that maximize or minimize an output. In one dimension, critical points occur where the derivative is zero or undefined; the second derivative helps us classify them. In data science, we often minimize a loss function (such as mean squared error) to fit a model; the condition “derivative equals zero” gives us the familiar closed-form formulas in simple cases.\nWe’ll keep things concrete with three themes: (1) locating and classifying extrema in a single-variable function, (2) understanding the second derivative test, and (3) minimizing mean squared error to fit a simple linear model.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#critical-points-where-optimization-starts",
+    "href": "lecture5.html#critical-points-where-optimization-starts",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.2 1. Critical Points: Where Optimization Starts",
+    "text": "13.2 1. Critical Points: Where Optimization Starts\nA critical point is a point \\(x=c\\) where \\(f'(c)=0\\) or \\(f'(c)\\) does not exist. Candidates for maxima or minima must be critical points (or endpoints of an interval).\n\n13.2.1 1.1 Example: A Non-Convex Function\nConsider \\[\nf(x) = x^3 - 3x^2 + 2.\n\\] Then \\(f'(x) = 3x^2 - 6x = 3x(x-2)\\) (critical points at \\(x=0\\) and \\(x=2\\)). The second derivative is \\(f''(x) = 6x - 6\\).\nThe code below plots \\(f(x)\\), marks the critical points, and draws a horizontal reference at \\(y=0\\) for context.\n\n\nCode\n# Purpose: Visualize f(x) = x^3 - 3x^2 + 2, mark critical points where f'(x)=0, and see local max/min.\n# We annotate points at x=0 and x=2 and add a horizontal reference line at y=0.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Define function\nf  &lt;- function(x) x^3 - 3*x^2 + 2\n\n# Grid for plotting\nx &lt;- seq(-1, 3, by = 0.01)\ndf &lt;- data.frame(x = x, y = f(x))\n\n# Critical points\nxc &lt;- c(0, 2)\nyc &lt;- f(xc)\n\nggplot(df, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  annotate(\"hline\", yintercept = 0, linetype = \"dashed\", color = \"black\", linewidth = 1) +\n  annotate(\"point\", x = xc[1], y = yc[1], shape = 16, size = 2, color = \"black\") +\n  annotate(\"point\", x = xc[2], y = yc[2], shape = 16, size = 2, color = \"black\") +\n  labs(\n    title = TeX(\"Critical Points of $f(x)=x^3-3x^2+2$ at $x=0$ and $x=2$\"),\n    x = \"x\", y = \"f(x)\"\n  )\n\n\nWarning: `geom` must not be \"hline\".\nℹ Please use `geom_hline()` directly instead.\n\n\n\n\n\n\n\n\n\nKey Insight: The curve rises, then falls, then rises again. Critical points at \\(x=0\\) and \\(x=2\\) are where the slope switches sign—prime candidates for local extrema.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#classifying-extrema-second-derivative-test",
+    "href": "lecture5.html#classifying-extrema-second-derivative-test",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.3 2. Classifying Extrema: Second Derivative Test",
+    "text": "13.3 2. Classifying Extrema: Second Derivative Test\nIf \\(f'(c)=0\\) and \\(f''(c) &gt; 0\\), \\(f\\) has a local minimum at \\(c\\). If \\(f''(c) &lt; 0\\), \\(f\\) has a local maximum at \\(c\\). If \\(f''(c)=0\\), the test is inconclusive (check other methods).\n\n13.3.1 2.1 Quick Check for the Example\nFor \\(f(x)=x^3 - 3x^2 + 2\\), we have \\(f''(x)=6x-6\\). Thus \\(f''(0)=-6&lt;0\\) (local maximum at \\(x=0\\)) and \\(f''(2)=6&gt;0\\) (local minimum at \\(x=2\\)).\nThe code below computes these values and displays a tiny table for clarity.\n\n\nCode\n# Purpose: Compute second-derivative values at critical points to classify maxima/minima.\n\n# Second derivative\nf2 &lt;- function(x) 6*x - 6\n\ncrit &lt;- data.frame(\n  x = c(0, 2),\n  `f''(x)` = f2(c(0, 2)),\n  Classification = c(\"Local maximum (f''&lt;0)\", \"Local minimum (f''&gt;0)\")\n)\n\ncrit\n\n\n  x f...x.        Classification\n1 0     -6 Local maximum (f''&lt;0)\n2 2      6 Local minimum (f''&gt;0)\n\n\nKey Insight: The sign of the second derivative at a critical point distinguishes peaks (negative) from valleys (positive).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#optimization-with-data-minimizing-mean-squared-error-mse",
+    "href": "lecture5.html#optimization-with-data-minimizing-mean-squared-error-mse",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.4 3. Optimization with Data: Minimizing Mean Squared Error (MSE)",
+    "text": "13.4 3. Optimization with Data: Minimizing Mean Squared Error (MSE)\nTo fit a simple linear model \\(\\hat{y} = m x + b\\) to data, we often minimize the mean squared error \\[\nL(m,b) = \\frac{1}{n} \\sum_{i=1}^n \\big(y_i - (m x_i + b)\\big)^2.\n\\] Setting partial derivatives to zero gives the normal equations, whose solution is the familiar \\[\nm^* = \\frac{\\operatorname{Cov}(x,y)}{\\operatorname{Var}(x)}, \\qquad\nb^* = \\bar{y} - m^*\\,\\bar{x}.\n\\] These come directly from \\(\\frac{\\partial L}{\\partial m}=0\\) and \\(\\frac{\\partial L}{\\partial b}=0\\).\n\n13.4.1 3.1 Worked Example and Verification in R\nWe simulate a dataset and compute \\((m^*, b^*)\\) from the closed-form formulas above. We verify by comparing to lm(y ~ x) and by checking that the gradient at \\((m^*,b^*)\\) is essentially zero.\n\n\nCode\n# Purpose: Fit a line by minimizing MSE using calculus (closed-form), verify with lm(), and check zero-gradient.\n# We compute m* = Cov(x,y)/Var(x) and b* = mean(y) - m* mean(x). Then we verify with lm and a gradient check.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nset.seed(123)\nn &lt;- 60\nx &lt;- runif(n, 0, 10)\ny &lt;- 1.5 * x + 4 + rnorm(n, sd = 2)  # true slope 1.5, intercept 4\n\n# Closed-form estimates from normal equations\nmx &lt;- mean(x); my &lt;- mean(y)\nm_star &lt;- cov(x, y) / var(x)\nb_star &lt;- my - m_star * mx\n\n# Verify with lm (ordinary least squares)\nfit &lt;- lm(y ~ x)\ncoef_lm &lt;- coef(fit)\n\n# Gradient of L(m,b) = mean( (y - (m x + b))^2 )\n# dL/dm = -2/n * sum x_i (y_i - (m x_i + b))\n# dL/db = -2/n * sum (y_i - (m x_i + b))\ndL_dm &lt;- function(m, b) (-2/length(y)) * sum(x * (y - (m * x + b)))\ndL_db &lt;- function(m, b) (-2/length(y)) * sum(y - (m * x + b))\n\ngrad_at_star &lt;- c(dL_dm(m_star, b_star), dL_db(m_star, b_star))\n\n# Plot data with fitted line (closed-form solution)\ndf &lt;- data.frame(x = x, y = y)\nggplot(df, aes(x, y)) +\n  geom_point(color = \"black\", size = 1) +\n  geom_abline(slope = m_star, intercept = b_star, color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"OLS by Calculus: Data with Fitted Line $\\\\hat{y}=m^* x + b^*$\"),\n    x = \"x\", y = \"y\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The calculus solution (closed-form) matches lm() and makes the gradient nearly zero at \\((m^*,b^*)\\). In practice, many models lack closed forms; we then search for parameters that drive the gradient toward zero (next lecture).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#newtons-method-preview",
+    "href": "lecture5.html#newtons-method-preview",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.5 4. Newton’s Method (Preview)",
+    "text": "13.5 4. Newton’s Method (Preview)\nA powerful one-dimensional method for locating critical points solves \\(f'(x)=0\\) by iterating \\[\nx_{k+1} = x_k - \\frac{f'(x_k)}{f''(x_k)}.\n\\] When \\(f\\) is well-behaved and you start near a solution, this can converge very quickly.\nThe code below applies Newton’s method to our earlier \\(f(x) = x^3 - 3x^2 + 2\\) starting near the local minimum at \\(x=2\\).\n\n\nCode\n# Purpose: Demonstrate Newton's method to solve f'(x)=0 for f(x)=x^3 - 3x^2 + 2.\n# We start near x=2 and show a few iterations approaching the minimizer.\n\n# Derivatives\nfp &lt;- function(x) 3*x^2 - 6*x\nfpp &lt;- function(x) 6*x - 6\n\n# Newton iterations\nxk &lt;- 1.8\niters &lt;- 6\nxs &lt;- numeric(iters + 1)\nxs[1] &lt;- xk\nfor (k in 1:iters) {\n  xk &lt;- xk - fp(xk) / fpp(xk)\n  xs[k + 1] &lt;- xk\n}\n\ndata.frame(Iteration = 0:iters, x = xs)\n\n\n  Iteration        x\n1         0 1.800000\n2         1 2.025000\n3         2 2.000305\n4         3 2.000000\n5         4 2.000000\n6         5 2.000000\n7         6 2.000000\n\n\nKey Insight: Newton’s updates home in on a nearby critical point by “using” curvature information (\\(f''\\)). In higher dimensions, the same idea generalizes with gradients and Hessians.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#practice-problems",
+    "href": "lecture5.html#practice-problems",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.6 Practice Problems",
+    "text": "13.6 Practice Problems\n\nFor \\(f(x)=x^3 - 3x^2 + 2\\), compute \\(f'(x)\\) and \\(f''(x)\\), and classify the critical points. Verify with a quick plot.\nShow that setting \\(\\frac{\\partial L}{\\partial m}=0\\) and \\(\\frac{\\partial L}{\\partial b}=0\\) for \\(L(m,b) = \\frac{1}{n} \\sum (y_i - (m x_i + b))^2\\) leads to the closed-form OLS formulas for \\(m^*\\) and \\(b^*\\).\nFor a dataset of your choice, compute \\((m^*, b^*)\\) using the closed-form OLS formulas and compare to lm(y ~ x). Plot the data and both fitted lines if they differ.\nApply two or three Newton iterations to \\(f(x)=x^3 - 3x^2 + 2\\) starting from \\(x=0.2\\) and from \\(x=2.5\\). Where do they converge? Why might Newton’s method behave differently from different starting points?",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#in-this-lesson-you-learned-to",
+    "href": "lecture5.html#in-this-lesson-you-learned-to",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.7 In this lesson, you learned to",
+    "text": "13.7 In this lesson, you learned to\n\nIdentify critical points and use the second derivative test to classify them.\nApply derivatives to minimize mean squared error and fit a simple linear model.\nVerify analytic solutions with numeric checks and plots.\nUnderstand the intuition behind Newton’s method as a fast local optimizer.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture5.html#coming-up",
+    "href": "lecture5.html#coming-up",
+    "title": "13  Lecture 5: Using Derivatives for Optimization",
+    "section": "13.8 Coming Up",
+    "text": "13.8 Coming Up\nNext time we put optimization to work algorithmically with the Gradient Descent method—choosing step sizes, monitoring convergence, and avoiding common pitfalls on real data.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Lecture 5: Using Derivatives for Optimization</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html",
+    "href": "lecture6.html",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "",
+    "text": "14.1 Introduction\nIn this lesson we turn derivatives into an algorithm: gradient descent. The central idea is simple—move parameters in the direction that decreases a chosen loss, using the gradient as our compass. We will keep the treatment practical and visual: start with a 1D warm‑up, study the effect of the step size (learning rate), watch descent on a 2D contour plot, and then fit a line by minimizing mean squared error with gradient descent.\nOur goals are to understand what the gradient tells us, how step size affects convergence, and how to implement a basic but reliable gradient‑descent loop in R for smooth, convex problems we meet in introductory modeling.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#from-slope-to-algorithm",
+    "href": "lecture6.html#from-slope-to-algorithm",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.2 1. From Slope to Algorithm",
+    "text": "14.2 1. From Slope to Algorithm\nFor a scalar function \\(f(x)\\), the gradient in 1D is just \\(f'(x)\\). A single gradient descent update with learning rate \\(\\eta&gt;0\\) is \\[\nx_{k+1} = x_k - \\eta\\,f'(x_k).\n\\] Intuitively, we step against the slope, by a small amount \\(\\eta\\).\n\n14.2.1 1.1 Warm‑Up: 1D Gradient Descent on a Quadratic\nWe use \\(f(x) = (x-3)^2\\), which has a unique minimum at \\(x=3\\) and derivative \\(f'(x)=2(x-3)\\). We will visualize the function, run a few descent steps, and plot both the iterates on the curve and the loss vs iteration.\n\n\nCode\n# Purpose: Run gradient descent on f(x)=(x-3)^2, visualize iterates on the curve, and plot loss vs iteration.\n# This shows how updates x_{k+1} = x_k - eta * f'(x_k) converge to the minimum for a sensible eta.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Define function and derivative\nf  &lt;- function(x) (x - 3)^2\nfp &lt;- function(x) 2 * (x - 3)\n\n# Gradient descent settings\neta &lt;- 0.2                   # step size (learning rate)\niters &lt;- 15\nxk &lt;- numeric(iters + 1)\nxk[1] &lt;- -2                  # start far from the minimizer\nfor (k in 1:iters) {\n  xk[k + 1] &lt;- xk[k] - eta * fp(xk[k])\n}\n\n# Build data for plotting the curve and iterates\nx_grid &lt;- seq(-3, 6, by = 0.01)\ndf_curve &lt;- data.frame(x = x_grid, y = f(x_grid))\ndf_pts   &lt;- data.frame(x = xk, y = f(xk), iter = 0:iters)\n\n# Figure 1: curve with iterate points\np1 &lt;- ggplot(df_curve, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  geom_point(data = df_pts, aes(x, y), color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"1D Gradient Descent on $f(x)=(x-3)^2$ (points are iterates)\"),\n    x = \"x\", y = \"f(x)\"\n  )\n\n# Figure 2: loss vs iteration\ndf_loss &lt;- data.frame(iter = 0:iters, loss = f(xk))\np2 &lt;- ggplot(df_loss, aes(iter, loss)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  geom_point(color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"Loss vs Iteration: $f(x_k)$ decreases under sensible $\\\\eta$\"),\n    x = \"Iteration k\", y = \"f(x_k)\"\n  )\n\np1\n\n\n\n\n\n\n\n\n\nCode\np2\n\n\n\n\n\n\n\n\n\nKey Insight: With a reasonable \\(\\eta\\), loss decreases monotonically on this convex quadratic, and \\(x_k\\) moves steadily toward \\(3\\). Too small \\(\\eta\\) is slow; too large \\(\\eta\\) can overshoot or diverge.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#step-size-learning-rate-matters",
+    "href": "lecture6.html#step-size-learning-rate-matters",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.3 2. Step Size (Learning Rate) Matters",
+    "text": "14.3 2. Step Size (Learning Rate) Matters\nWe contrast a convergent step size with an aggressive step size that overshoots. We reuse \\(f(x)=(x-3)^2\\) with the same start and compare loss curves using different linetypes (both black).\n\n\nCode\n# Purpose: Show the effect of learning rate on convergence using two runs and comparing loss curves.\n# Both lines are black; we use linetype to distinguish them per house style.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nf  &lt;- function(x) (x - 3)^2\nfp &lt;- function(x) 2 * (x - 3)\n\ngd_run &lt;- function(eta, iters = 20, x0 = -2) {\n  xs &lt;- numeric(iters + 1); xs[1] &lt;- x0\n  for (k in 1:iters) xs[k + 1] &lt;- xs[k] - eta * fp(xs[k])\n  data.frame(iter = 0:iters, loss = f(xs), eta = eta)\n}\n\ndf_a &lt;- gd_run(eta = 0.2, iters = 20)   # convergent\ndf_b &lt;- gd_run(eta = 1.1, iters = 20)   # overshoots/oscillates\n\ndf &lt;- rbind(\n  transform(df_a, label = \"eta = 0.2\", lty = \"solid\"),\n  transform(df_b, label = \"eta = 1.1\", lty = \"dashed\")\n)\n\nggplot(df, aes(iter, loss, linetype = lty)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"Learning Rate Shapes Convergence on $f(x)=(x-3)^2$\"),\n    x = \"Iteration\", y = \"Loss $f(x_k)$\"\n  ) +\n  guides(linetype = \"none\")\n\n\n\n\n\n\n\n\n\nKey Insight: A modest \\(\\eta\\) yields a smooth, fast decrease; a large \\(\\eta\\) causes oscillations or divergence. In practice, start small, monitor loss, and adjust if needed.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#d-descent-on-a-convex-bowl-contour-view",
+    "href": "lecture6.html#d-descent-on-a-convex-bowl-contour-view",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.4 3. 2D Descent on a Convex Bowl (Contour View)",
+    "text": "14.4 3. 2D Descent on a Convex Bowl (Contour View)\nWe minimize \\[\nJ(a,b) = (a-2)^2 + 4\\,(b+1)^2,\n\\] whose gradient is \\(\\nabla J(a,b) = \\big(2(a-2),\\,8(b+1)\\big)\\). We will plot contours of \\(J\\) and overlay the path of gradient descent.\n\n\nCode\n# Purpose: Visualize gradient descent on a 2D convex function with contour lines and an overlaid path.\n# We generate a grid for J(a,b), run GD from an initial point, and draw the iterates.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nJ &lt;- function(a, b) (a - 2)^2 + 4 * (b + 1)^2\ngradJ &lt;- function(a, b) c(2 * (a - 2), 8 * (b + 1))\n\n# Grid for contours\na_seq &lt;- seq(-4, 5, by = 0.05)\nb_seq &lt;- seq(-4, 4, by = 0.05)\ngrid &lt;- expand.grid(a = a_seq, b = b_seq)\ngrid$J &lt;- J(grid$a, grid$b)\n\n# Gradient descent path\neta &lt;- 0.2\nsteps &lt;- 25\na &lt;- -3; b &lt;- 3\npath &lt;- data.frame(step = 0:steps, a = NA_real_, b = NA_real_, J = NA_real_)\npath$a[1] &lt;- a; path$b[1] &lt;- b; path$J[1] &lt;- J(a, b)\nfor (k in 1:steps) {\n  g &lt;- gradJ(a, b)\n  a &lt;- a - eta * g[1]\n  b &lt;- b - eta * g[2]\n  path$a[k + 1] &lt;- a\n  path$b[k + 1] &lt;- b\n  path$J[k + 1] &lt;- J(a, b)\n}\n\nggplot(grid, aes(a, b, z = J)) +\n  stat_contour(color = \"black\") +\n  geom_path(data = path, aes(a, b), color = \"black\", linewidth = 1) +\n  geom_point(data = path, aes(a, b), color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"2D Gradient Descent Path on $J(a,b)=(a-2)^2 + 4(b+1)^2$\"),\n    x = \"a\", y = \"b\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The path follows steepest descent toward \\((2,-1)\\). Contours help us see how anisotropy (different curvature in \\(a\\) vs \\(b\\)) affects the path’s shape and the choice of step size.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#linear-regression-via-gradient-descent",
+    "href": "lecture6.html#linear-regression-via-gradient-descent",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.5 4. Linear Regression via Gradient Descent",
+    "text": "14.5 4. Linear Regression via Gradient Descent\nWe fit \\(\\hat{y} = w_1 x + w_0\\) by minimizing mean squared error \\[\nL(w_0,w_1) = \\frac{1}{n} \\sum_{i=1}^n \\big(y_i - (w_1 x_i + w_0)\\big)^2.\n\\] The gradient is \\[\n\\frac{\\partial L}{\\partial w_0} = -\\frac{2}{n}\\sum_{i=1}^n \\big(y_i - (w_1 x_i + w_0)\\big), \\qquad\n\\frac{\\partial L}{\\partial w_1} = -\\frac{2}{n}\\sum_{i=1}^n x_i\\,\\big(y_i - (w_1 x_i + w_0)\\big).\n\\]\nWe implement gradient descent, compare to the closed‑form OLS solution and lm(), and visualize the fitted line and the loss curve.\n\n\nCode\n# Purpose: Minimize linear regression MSE with gradient descent; compare to closed-form and lm().\n# We plot the data with the GD-fitted line and the loss-vs-iteration curve.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nset.seed(7)\nn &lt;- 80\nx &lt;- runif(n, 0, 12)\ny &lt;- 2.2 * x + 5 + rnorm(n, sd = 3)\n\n# Closed-form OLS for reference\nm_star &lt;- cov(x, y) / var(x)\nb_star &lt;- mean(y) - m_star * mean(x)\n\n# Gradient of L(w0,w1)\ndL_dw0 &lt;- function(w0, w1) (-2/length(y)) * sum(y - (w1 * x + w0))\ndL_dw1 &lt;- function(w0, w1) (-2/length(y)) * sum(x * (y - (w1 * x + w0)))\n\n# Gradient descent loop\neta &lt;- 1e-3\nsteps &lt;- 2000\nw0 &lt;- 0; w1 &lt;- 0\nloss &lt;- numeric(steps)\nfor (k in 1:steps) {\n  # Compute gradient at current (w0, w1)\n  g0 &lt;- dL_dw0(w0, w1)\n  g1 &lt;- dL_dw1(w0, w1)\n  # Update\n  w0 &lt;- w0 - eta * g0\n  w1 &lt;- w1 - eta * g1\n  # Track loss\n  loss[k] &lt;- mean((y - (w1 * x + w0))^2)\n}\n\n# Compare to lm()\ncoef_lm &lt;- coef(lm(y ~ x))\n\n# Plot data with GD-fitted line\ndf &lt;- data.frame(x = x, y = y)\np_line &lt;- ggplot(df, aes(x, y)) +\n  geom_point(color = \"black\", size = 1) +\n  geom_abline(slope = w1, intercept = w0, color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"Linear Fit via Gradient Descent: $\\\\hat{y}=w_1 x + w_0$\"),\n    x = \"x\", y = \"y\"\n  )\n\n# Loss vs iteration\ndf_loss &lt;- data.frame(iter = 1:steps, loss = loss)\np_loss &lt;- ggplot(df_loss, aes(iter, loss)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"MSE Loss vs Iteration under Gradient Descent\"),\n    x = \"Iteration\", y = \"MSE\"\n  )\n\np_line\n\n\n\n\n\n\n\n\n\nCode\np_loss\n\n\n\n\n\n\n\n\n\nKey Insight: For this well‑scaled problem, gradient descent converges smoothly to a line close to OLS/lm(). In practice, feature scaling helps GD (and many optimizers) converge faster and more stably.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#practice-problems",
+    "href": "lecture6.html#practice-problems",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.6 Practice Problems",
+    "text": "14.6 Practice Problems\n\nRun 1D gradient descent on \\(f(x)=(x-4)^2\\) with \\(x_0=-6\\) for several \\(\\eta\\) values (e.g., \\(0.05, 0.2, 0.8\\)). Plot loss vs iteration and compare behavior.\nModify the 2D example to \\(J(a,b) = (a-1)^2 + 9(b-2)^2\\). Plot the contour path with \\(\\eta=0.15\\) and discuss how the curvature ratio affects the path.\nImplement gradient descent for linear regression but standardize \\(x\\) first (subtract mean, divide by standard deviation). Compare convergence speed of loss vs iteration with and without standardization.\nTry a learning-rate schedule: set \\(\\eta_k = \\frac{\\eta_0}{1 + 0.001 k}\\) in the linear regression GD loop. Does it help or hurt convergence? Why might schedules be used?",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#in-this-lesson-you-learned-to",
+    "href": "lecture6.html#in-this-lesson-you-learned-to",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.7 In this lesson, you learned to",
+    "text": "14.7 In this lesson, you learned to\n\nInterpret gradient descent updates and monitor convergence with loss curves.\nChoose and reason about step sizes; recognize overshooting and divergence.\nVisualize 2D descent with contour plots to understand geometry and curvature.\nFit a simple linear regression with gradient descent and compare to OLS/lm().",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture6.html#coming-up",
+    "href": "lecture6.html#coming-up",
+    "title": "14  Lecture 6: Gradient Descent in Practice",
+    "section": "14.8 Coming Up",
+    "text": "14.8 Coming Up\nNext we pivot to integration: thinking in reverse about accumulation and area. We will connect discrete sums to continuous areas, estimate areas under curves, and motivate the Fundamental Theorem of Calculus for data applications.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Lecture 6: Gradient Descent in Practice</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html",
+    "href": "lecture7.html",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "",
+    "text": "15.1 Introduction\nIntegration is the calculus of accumulation. In this lesson we introduce antiderivatives (integration as the reverse of differentiation) and the idea of an accumulation function that adds up small contributions over an interval. We will write and check simple indefinite integrals, then build a numerical trapezoid helper to approximate accumulated area from data or black‑box functions.\nOur focus remains practical: short rules you will actually use, quick verification in R, and clear plots that connect formulas to pictures.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#antiderivatives-indefinite-integrals",
+    "href": "lecture7.html#antiderivatives-indefinite-integrals",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.2 1. Antiderivatives (Indefinite Integrals)",
+    "text": "15.2 1. Antiderivatives (Indefinite Integrals)\nIf \\(F'(x) = f(x)\\), then \\(F\\) is an antiderivative of \\(f\\). We write \\[\n\\int f(x)\\,dx = F(x) + C,\n\\] where \\(C\\) is the constant of integration (any constant differentiates to \\(0\\)).\nBasic rules (informal):\n\nLinearity: \\(\\int \\big(a\\,f(x) + b\\,g(x)\\big)\\,dx = a\\int f(x)\\,dx + b\\int g(x)\\,dx\\).\nPower rule (reverse): for \\(n \\ne -1\\), \\(\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + C\\).\nExponential: \\(\\int e^{a x}\\,dx = \\frac{1}{a}e^{a x} + C\\) (for constant \\(a\\ne 0\\)).\nLog reminder: \\(\\frac{d}{dx}\\,\\ln|x| = \\frac{1}{x}\\) for \\(x\\ne 0\\) \\(\\Rightarrow\\) \\(\\int \\frac{1}{x}\\,dx = \\ln|x| + C\\).\n\nWhen in doubt, differentiate your answer to check it returns the original \\(f(x)\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#verifying-an-antiderivative-numerically",
+    "href": "lecture7.html#verifying-an-antiderivative-numerically",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.3 2. Verifying an Antiderivative Numerically",
+    "text": "15.3 2. Verifying an Antiderivative Numerically\nWe’ll propose an antiderivative and verify it by comparing a numeric derivative of \\(F\\) to the original \\(f\\). Consider \\[\nf(x) = 3x^2 - 6x + 1,\\qquad F(x) = x^3 - 3x^2 + x + C.\n\\] We expect \\(F'(x)=f(x)\\).\nThe code below computes a centered‑difference derivative of \\(F\\) and plots it against \\(f\\) (line = analytic \\(f\\), points = numeric \\(F'\\)).\n\n\nCode\n# Purpose: Numerically verify that F'(x) = f(x) for F(x) = x^3 - 3x^2 + x + C.\n# We compute a centered-difference derivative of F and compare it to f on a grid.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Define f and a candidate antiderivative F\nf &lt;- function(x) 3*x^2 - 6*x + 1\nF &lt;- function(x) x^3 - 3*x^2 + x   # constant C drops out upon differentiation\n\n# Grid and step for centered difference\nx &lt;- seq(-2, 4, by = 0.01)\nh &lt;- 0.005\n\n# Centered difference for F' (pad endpoints by clamping within grid)\nFp_forward  &lt;- F(pmin(x + h, max(x)))\nFp_backward &lt;- F(pmax(x - h, min(x)))\nFprime_num  &lt;- (Fp_forward - Fp_backward) / (2*h)\n\ndf &lt;- data.frame(x = x, f = f(x), Fp_num = Fprime_num)\n\nggplot(df, aes(x)) +\n  geom_line(aes(y = f), color = \"black\", linewidth = 1) +\n  geom_point(aes(y = Fp_num), color = \"black\", size = 0.6) +\n  labs(\n    title = TeX(\"Antiderivative Check: numeric $F'(x)$ (points) vs analytic $f(x)$ (line)\"),\n    x = \"x\", y = \"value\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The points lie on the line, confirming \\(F'(x)=f(x)\\). Numerically differentiating \\(F\\) is a quick way to sanity‑check an antiderivative without doing algebra by hand.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#accumulation-functions-and-trapezoids",
+    "href": "lecture7.html#accumulation-functions-and-trapezoids",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.4 3. Accumulation Functions and Trapezoids",
+    "text": "15.4 3. Accumulation Functions and Trapezoids\nAn accumulation function adds up \\(f\\) from a baseline \\(a\\) to a variable upper limit \\(x\\): \\[\nA(x) = \\int_a^x f(t)\\,dt.\n\\] As \\(x\\) moves, \\(A(x)\\) grows by the area under \\(f\\) from \\(a\\) to \\(x\\). We will build \\(A(x)\\) numerically with the trapezoid rule and compare to a known case \\(f(x)=e^{-x}\\) with \\(a=0\\), where the exact accumulation is \\[\nA(x) = 1 - e^{-x}.\n\\]\nThe next code constructs a simple cumulative trapezoid and plots both \\(f\\) and \\(A\\) together (different linetypes, both black).\n\n\nCode\n# Purpose: Build an accumulation function A(x) = ∫_0^x f(t) dt numerically (trapezoids) for f(x)=exp(-x).\n# We compute a cumulative trapezoid over a grid and compare to the exact A(x)=1 - exp(-x).\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Function and grid\nf &lt;- function(x) exp(-x)\nx &lt;- seq(0, 5, by = 0.02)\nfx &lt;- f(x)\n\n# Cumulative trapezoid from 0 to each x_k\n# Trapezoid on [x_i, x_{i+1}]: (Δx) * (f_i + f_{i+1}) / 2\ndx &lt;- diff(x)\ntraps &lt;- dx * (fx[-length(fx)] + fx[-1]) / 2\nA_num &lt;- c(0, cumsum(traps))  # A(0)=0\n\n# Exact accumulation for comparison\nA_exact &lt;- 1 - exp(-x)\n\ndf &lt;- data.frame(x = x, f = fx, A_num = A_num, A_exact = A_exact)\n\n# Plot f and A together (same axes; both in [0,1] for x &gt;= 0)\nggplot(df, aes(x)) +\n  geom_line(aes(y = f, linetype = \"f(x) = e^{-x}\"), color = \"black\", linewidth = 1) +\n  geom_line(aes(y = A_num, linetype = \"A_num(x) (trapezoid)\"), color = \"black\", linewidth = 1) +\n  geom_line(aes(y = A_exact, linetype = \"A_exact(x) = 1 - e^{-x}\"), color = \"black\", linewidth = 1) +\n  scale_linetype_manual(values = c(\"solid\", \"dashed\", \"dotted\")) +\n  labs(\n    title = TeX(\"Accumulation via Trapezoids: $A(x)=\\\\int_0^x e^{-t}\\\\,dt$\"),\n    x = \"x\", y = \"value\", linetype = NULL\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: For a reasonably fine grid, the cumulative trapezoid closely matches the exact accumulation. You can reuse this approach whenever you have samples of \\(f\\) but no closed‑form antiderivative.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#when-no-elementary-antiderivative-exists",
+    "href": "lecture7.html#when-no-elementary-antiderivative-exists",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.5 4. When No Elementary Antiderivative Exists",
+    "text": "15.5 4. When No Elementary Antiderivative Exists\nSome useful functions (e.g., \\(e^{-x^2}\\)) have no elementary antiderivative. Numerical integration becomes the default. Below we approximate \\[\n\\int_0^1 e^{-x^2}\\,dx\n\\] with the trapezoid rule at several step sizes to see convergence.\n\n\nCode\n# Purpose: Approximate ∫_0^1 exp(-x^2) dx with trapezoids for several step sizes; show convergence in a table.\n\n# Trapezoid helper on [a,b] with n subintervals\ntrapz &lt;- function(f, a, b, n) {\n  xs &lt;- seq(a, b, length.out = n + 1)\n  ys &lt;- f(xs)\n  dx &lt;- (b - a) / n\n  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))\n}\n\nf &lt;- function(x) exp(-(x^2))\n\nns &lt;- c(10, 20, 50, 100, 200, 500, 1000)\napprox_vals &lt;- sapply(ns, function(n) trapz(f, 0, 1, n))\n\ndata.frame(n_subintervals = ns, Trapz_Estimate = approx_vals)\n\n\n  n_subintervals Trapz_Estimate\n1             10      0.7462108\n2             20      0.7466708\n3             50      0.7467996\n4            100      0.7468180\n5            200      0.7468226\n6            500      0.7468239\n7           1000      0.7468241\n\n\nKey Insight: As we refine the step size (increase \\(n\\)), the trapezoid estimates stabilize. In later courses you’ll meet more accurate gauges (e.g., Simpson’s rule), but the trapezoid is a reliable first pass and easy to implement.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#practice-problems",
+    "href": "lecture7.html#practice-problems",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.6 Practice Problems",
+    "text": "15.6 Practice Problems\n\nCompute the following indefinite integrals and check by differentiating your answers:\n\n\\(\\int (4x^3 - 6x + 5)\\,dx\\)\n\n\\(\\int (3e^{2x} - 7)\\,dx\\)\n\n\\(\\int \\frac{1}{x}\\,dx\\) (state the domain restriction).\n\nFor \\(f(x)=2x-1\\), construct the accumulation function \\(A(x)=\\int_0^x f(t)\\,dt\\). Plot both \\(f\\) and \\(A\\) on the same axes and explain how \\(A\\) changes where \\(f\\) is positive vs. negative.\nUse the trapezoid rule to approximate \\(\\int_0^2 e^{-x}\\,dx\\) with 20 and 200 subintervals. Compare to the exact \\(1 - e^{-2}\\).\n(Concept) Explain why adding a constant \\(C\\) to an antiderivative does not change its derivative, and describe what this means for graphing families of antiderivatives.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#in-this-lesson-you-learned-to",
+    "href": "lecture7.html#in-this-lesson-you-learned-to",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.7 In this lesson, you learned to",
+    "text": "15.7 In this lesson, you learned to\n\nInterpret antiderivatives as the reverse of differentiation and apply basic integration rules.\nVerify an antiderivative numerically by differentiating it and comparing to the original function.\nBuild and plot an accumulation function using the trapezoid rule.\nRecognize when numerical integration is needed (no elementary antiderivative) and assess convergence briefly.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture7.html#coming-up",
+    "href": "lecture7.html#coming-up",
+    "title": "15  Lecture 7: Antiderivatives & Accumulation",
+    "section": "15.8 Coming Up",
+    "text": "15.8 Coming Up\nNext time we connect antiderivatives to definite integrals via the Fundamental Theorem of Calculus. We will compute exact areas when possible and use numerical integration (trapezoids) when necessary, with shaded plots to build intuition.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Lecture 7: Antiderivatives & Accumulation</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html",
+    "href": "lecture8.html",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "",
+    "text": "16.1 Introduction\nToday we connect antiderivatives to definite integrals and make the area story precise. The definite integral \\(\\int_a^b f(x)\\,dx\\) captures signed area under a curve; the Fundamental Theorem of Calculus (FTC) ties this area to antiderivatives and to accumulation. We will compute areas exactly when possible and use the trapezoid rule when a closed form is unavailable or we only have sampled data. Along the way, we’ll build intuition with shaded plots and small numeric experiments in R.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#definite-integral-as-signed-area",
+    "href": "lecture8.html#definite-integral-as-signed-area",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.2 1. Definite Integral as Signed Area",
+    "text": "16.2 1. Definite Integral as Signed Area\nGiven a function \\(f\\) on \\([a,b]\\), the definite integral \\[\n\\int_a^b f(x)\\,dx\n\\] represents the net (signed) area: regions where \\(f(x)\\ge 0\\) contribute positively; regions where \\(f(x)&lt;0\\) contribute negatively.\n\n16.2.1 1.1 Shaded Area Example: \\(\\int_0^{\\pi} \\sin x\\,dx\\)\nWe’ll visualize the area under \\(f(x)=\\sin x\\) on \\([0,\\pi]\\). Because \\(\\sin x \\ge 0\\) there, the integral equals the geometric area between the curve and the \\(x\\)‑axis.\nThe code below constructs a data frame for \\(x\\) and \\(y=\\sin x\\), then uses a filled area to illustrate the integral region, with black outlines per our house style.\n\n\nCode\n# Purpose: Shade the area under sin(x) on [0, pi] to visualize the definite integral.\n# We draw the sine curve in black and use a light fill to indicate the area.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\n# Build data on [0, pi]\nx &lt;- seq(0, pi, by = 0.01)\ny &lt;- sin(x)\ndf &lt;- data.frame(x = x, y = y)\n\nggplot(df, aes(x, y)) +\n  geom_area(fill = \"grey88\", color = \"black\", linewidth = 1) +  # shaded area with black outline\n  geom_line(color = \"black\", linewidth = 1) +                    # curve outline\n  labs(\n    title = TeX(\"Shaded Area: $\\\\int_0^{\\\\pi} \\\\sin x\\\\,dx$\"),\n    x = \"x\", y = \"f(x)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: On \\([0,\\pi]\\), \\(\\sin x\\) stays nonnegative, so the definite integral equals the geometric area. (Later we’ll compute this area exactly: \\(\\int_0^{\\pi} \\sin x\\,dx = 2\\).)",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#the-fundamental-theorem-of-calculus-ftc",
+    "href": "lecture8.html#the-fundamental-theorem-of-calculus-ftc",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.3 2. The Fundamental Theorem of Calculus (FTC)",
+    "text": "16.3 2. The Fundamental Theorem of Calculus (FTC)\nThe FTC has two parts that link area and derivatives:\n\nFTC Part 1: If \\(A(x) = \\int_a^x f(t)\\,dt\\), then \\(A'(x) = f(x)\\) (for continuous \\(f\\)). The derivative of an accumulation function gives back the original function.\nFTC Part 2: If \\(F'(x) = f(x)\\), then \\(\\displaystyle \\int_a^b f(x)\\,dx = F(b) - F(a)\\). You can compute exact area via an antiderivative.\n\n\n16.3.1 2.1 Exact Area via FTC Part 2: \\(\\int_0^3 x^2\\,dx\\)\nWe can integrate \\(x^2\\) exactly: an antiderivative is \\(F(x)=\\frac{x^3}{3}\\), so \\[\n\\int_0^3 x^2\\,dx = F(3)-F(0) = \\frac{27}{3} - 0 = 9.\n\\]\nThe code below shows a small calculation for the exact value and a trapezoid approximation to compare.\n\n\nCode\n# Purpose: Compute ∫_0^3 x^2 dx exactly via FTC and compare to a trapezoid approximation.\n\n# Exact via antiderivative F(x)=x^3/3\nexact &lt;- (3^3)/3 - (0^3)/3\n\n# Trapezoid approximation helper\ntrapz &lt;- function(f, a, b, n) {\n  xs &lt;- seq(a, b, length.out = n + 1)\n  ys &lt;- f(xs)\n  dx &lt;- (b - a) / n\n  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))\n}\nf &lt;- function(x) x^2\napprox_n &lt;- 20\napprox_val &lt;- trapz(f, 0, 3, approx_n)\n\ndata.frame(Method = c(\"Exact (FTC)\", paste0(\"Trapezoid (n=\", approx_n, \")\")),\n           Value  = c(exact, approx_val))\n\n\n            Method   Value\n1      Exact (FTC) 9.00000\n2 Trapezoid (n=20) 9.01125\n\n\nKey Insight: When an antiderivative is easy to find, FTC Part 2 turns area into a quick subtraction \\(F(b)-F(a)\\). Numerical integration should agree closely for a reasonable number of subintervals.\n\n\n16.3.2 2.2 FTC Part 1 (Numerical Illustration)\nLet \\(f(x)=e^{-x}\\) and define the accumulation function \\(A(x)=\\int_0^x f(t)\\,dt\\). We approximate \\(A\\) numerically with cumulative trapezoids, then take a numeric derivative of \\(A\\) and compare it to \\(f\\).\n\n\nCode\n# Purpose: Illustrate FTC Part 1 numerically: derivative of accumulation equals the original function.\n# We build A(x) by cumulative trapezoids and compare a numeric derivative of A to f(x)=exp(-x).\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nf &lt;- function(x) exp(-x)\n\n# Grid and cumulative trapezoid for A(x) on [0,5]\nx &lt;- seq(0, 5, by = 0.02)\nfx &lt;- f(x)\ndx &lt;- diff(x)\ntraps &lt;- dx * (fx[-length(fx)] + fx[-1]) / 2\nA_num &lt;- c(0, cumsum(traps))\n\n# Numeric derivative of A via centered difference\nh &lt;- 0.02\nA_forward  &lt;- A_num[pmin(1:length(A_num) + 1, length(A_num))]\nA_backward &lt;- A_num[pmax(1:length(A_num) - 1, 1)]\nAprime_num &lt;- (A_forward - A_backward) / (2*h)\n\ndf &lt;- data.frame(x = x, f = fx, Aprime = Aprime_num)\n\nggplot(df, aes(x)) +\n  geom_line(aes(y = f, linetype = \"f(x) = e^{-x}\"), color = \"black\", linewidth = 1) +\n  geom_line(aes(y = Aprime, linetype = \"A'(x) (numeric)\"), color = \"black\", linewidth = 1) +\n  scale_linetype_manual(values = c(\"solid\", \"dashed\")) +\n  labs(\n    title = TeX(\"FTC Part 1 (Numeric): $\\\\frac{d}{dx}\\\\int_0^x e^{-t}\\\\,dt \\\\approx e^{-x}$\"),\n    x = \"x\", y = \"value\", linetype = NULL\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The numeric derivative of the accumulation function overlaps the original \\(f(x)=e^{-x}\\), illustrating FTC Part 1: differentiating accumulated area recovers the integrand.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#numerical-integration-trapezoid-rule",
+    "href": "lecture8.html#numerical-integration-trapezoid-rule",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.4 3. Numerical Integration: Trapezoid Rule",
+    "text": "16.4 3. Numerical Integration: Trapezoid Rule\nWhen \\(F\\) is hard to find or unavailable, the trapezoid rule approximates \\(\\int_a^b f(x)\\,dx\\) by slicing \\([a,b]\\) into \\(n\\) subintervals of width \\(\\Delta x\\) and summing trapezoid areas: \\[\n\\int_a^b f(x)\\,dx \\approx \\Delta x\\left(\\tfrac{1}{2}f(x_0) + f(x_1)+\\cdots+f(x_{n-1}) + \\tfrac{1}{2}f(x_n)\\right),\n\\quad \\Delta x = \\frac{b-a}{n}.\n\\]\n\n16.4.1 3.1 How Step Size Affects Accuracy\nWe’ll estimate \\(\\int_0^3 x^2\\,dx\\) with different \\(n\\) and see how the absolute error shrinks as \\(n\\) grows.\n\n\nCode\n# Purpose: Show error vs number of subintervals for trapezoid rule on ∫_0^3 x^2 dx.\n# We compute estimates for several n and plot absolute error.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\ntrapz &lt;- function(f, a, b, n) {\n  xs &lt;- seq(a, b, length.out = n + 1)\n  ys &lt;- f(xs)\n  dx &lt;- (b - a) / n\n  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))\n}\nf &lt;- function(x) x^2\nexact &lt;- 9\n\nns &lt;- c(4, 8, 16, 32, 64, 128, 256)\nest &lt;- sapply(ns, function(n) trapz(f, 0, 3, n))\nerr &lt;- abs(est - exact)\n\ndf_err &lt;- data.frame(n = ns, abs_error = err)\n\nggplot(df_err, aes(x = n, y = abs_error)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  geom_point(color = \"black\", size = 1) +\n  labs(\n    title = TeX(\"Trapezoid Error vs Subintervals: $\\\\int_0^3 x^2\\\\,dx$\"),\n    x = \"Number of subintervals (n)\", y = \"Absolute error |estimate - exact|\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: Finer partitions (larger \\(n\\)) reduce the error. For smooth functions, trapezoid error generally improves quadratically as you refine the step (rule of thumb).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#when-to-use-exact-vs-numerical-integration",
+    "href": "lecture8.html#when-to-use-exact-vs-numerical-integration",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.5 4. When to Use Exact vs Numerical Integration",
+    "text": "16.5 4. When to Use Exact vs Numerical Integration\n\nUse exact (FTC) when: an antiderivative \\(F\\) is easy to find, algebra is stable, and evaluation is cheap (\\(F(b)-F(a)\\)).\nUse numerical when: no elementary \\(F\\) exists (e.g., \\(e^{-x^2}\\)), \\(f\\) is defined only by data or a black-box model, or you want a quick, robust approximation and can control step size.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#practice-problems",
+    "href": "lecture8.html#practice-problems",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.6 Practice Problems",
+    "text": "16.6 Practice Problems\n\nCompute exactly using FTC Part 2 (show \\(F\\)):\n\n\\(\\int_0^4 2x\\,dx\\)\n\n\\(\\int_1^3 (3x^2 - 1)\\,dx\\)\n\n\\(\\int_0^{\\pi} \\sin x\\,dx\\)\n\nUse the trapezoid rule to approximate \\(\\int_0^3 x^2\\,dx\\) with \\(n=6,12,24\\). Report the absolute error versus the exact value \\(9\\).\nLet \\(A(x)=\\int_0^x e^{-t}\\,dt\\). Numerically differentiate your \\(A(x)\\) and compare to \\(e^{-x}\\) on \\([0,4]\\). What step size gives a good match?\n(Concept) Explain why the definite integral can be negative and give a simple example. Why is this useful in modeling?",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#in-this-lesson-you-learned-to",
+    "href": "lecture8.html#in-this-lesson-you-learned-to",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.7 In this lesson, you learned to",
+    "text": "16.7 In this lesson, you learned to\n\nInterpret the definite integral as signed area and compute it exactly using FTC Part 2.\nIllustrate FTC Part 1 by showing that the derivative of an accumulation function returns the integrand.\nImplement the trapezoid rule and reason about how step size affects accuracy.\nDecide when to use exact integration vs numerical approximation in practice.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture8.html#coming-up",
+    "href": "lecture8.html#coming-up",
+    "title": "16  Lecture 8: Definite Integrals & the Fundamental Theorem",
+    "section": "16.8 Coming Up",
+    "text": "16.8 Coming Up\nNext: Integration in Data Science — Area, AUC, and Expected Value. We’ll compute areas/aggregates, verify probability densities integrate to 1, and use integrals to compute expected values for common distributions.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Lecture 8: Definite Integrals & the Fundamental Theorem</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html",
+    "href": "lecture9.html",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "",
+    "text": "17.1 Introduction\nTo close our calculus series, we put integration to work on the kinds of tasks you meet in data science: computing areas/aggregates, verifying probability densities, and calculating expected values. We will mix exact results (when available) with numerical integration using the trapezoid rule when formulas are unavailable or we only have sampled values.\nOur focus is practical: interpret integrals in context, implement them cleanly in R, and explain results in plain language.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#probability-densities-integrate-to-1",
+    "href": "lecture9.html#probability-densities-integrate-to-1",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.2 1. Probability Densities Integrate to 1",
+    "text": "17.2 1. Probability Densities Integrate to 1\nA probability density function (pdf) \\(f(x)\\) must satisfy two properties: \\(f(x) \\ge 0\\) and \\[\n\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1.\n\\] We will numerically verify this for the exponential density \\(f(x)=\\lambda e^{-\\lambda x}\\) on \\([0,\\infty)\\) with \\(\\lambda=1.2\\), using a large finite window.\n\n17.2.1 1.1 Numeric Check: Exponential Density\nThe next code approximates \\(\\int_0^B \\lambda e^{-\\lambda x}\\,dx\\) by trapezoids for a large \\(B\\) and compares it to the exact value \\(1 - e^{-\\lambda B}\\), which approaches 1 as \\(B \\to \\infty\\).\n\n\nCode\n# Purpose: Verify that an exponential pdf integrates to ~1 over a large window by trapezoids; compare to exact tail.\n# We also plot the density for context (black line).\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nlambda &lt;- 1.2\nf &lt;- function(x) lambda * exp(-lambda * x)\n\n# Trapezoid helper on [a,b] with n subintervals\ntrapz &lt;- function(f, a, b, n) {\n  xs &lt;- seq(a, b, length.out = n + 1)\n  ys &lt;- f(xs)\n  dx &lt;- (b - a) / n\n  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))\n}\n\nB &lt;- 10                       # finite upper bound to approximate [0, ∞)\nn &lt;- 2000\napprox_mass &lt;- trapz(f, 0, B, n)\nexact_trunc &lt;- 1 - exp(-lambda * B)  # exact mass on [0,B]\n\ndata.frame(ApproxMass = approx_mass, ExactMassOn_0_to_B = exact_trunc, TailMassBeyondB = 1 - exact_trunc)\n\n\n  ApproxMass ExactMassOn_0_to_B TailMassBeyondB\n1  0.9999969          0.9999939    6.144212e-06\n\n\nCode\n# Plot the density on [0,B]\nx &lt;- seq(0, B, by = 0.01)\ndf &lt;- data.frame(x = x, y = f(x))\nggplot(df, aes(x, y)) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(title = TeX(\"Exponential pdf $f(x)=\\\\lambda e^{-\\\\lambda x}$ with $\\\\lambda=1.2$\"),\n       x = \"x\", y = \"density\")\n\n\n\n\n\n\n\n\n\nKey Insight: On a large window \\([0,B]\\), the approximate area under the density is very close to \\(1\\); the small remainder is the tail mass beyond \\(B\\).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#expected-value-as-an-integral",
+    "href": "lecture9.html#expected-value-as-an-integral",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.3 2. Expected Value as an Integral",
+    "text": "17.3 2. Expected Value as an Integral\nFor a continuous random variable \\(X\\) with pdf \\(f(x)\\), the expected value (mean) is \\[\nE[X] = \\int_{-\\infty}^{\\infty} x f(x)\\,dx.\n\\] We will compute \\(E[X]\\) numerically and compare to known exact values for common densities.\n\n17.3.1 2.1 Exponential Mean (Exact vs Numeric)\nFor \\(X \\sim \\text{Exponential}(\\lambda)\\), the exact mean is \\(E[X] = \\frac{1}{\\lambda}\\). We estimate it numerically on \\([0,B]\\) and compare.\n\n\nCode\n# Purpose: Estimate E[X] for an exponential pdf numerically and compare to the exact 1/lambda.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nlambda &lt;- 1.2\nf &lt;- function(x) lambda * exp(-lambda * x)\n\n# Numeric E[X] on [0,B] by trapezoids (approximation)\ntrapz &lt;- function(f, a, b, n) {\n  xs &lt;- seq(a, b, length.out = n + 1)\n  ys &lt;- f(xs)\n  dx &lt;- (b - a) / n\n  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))\n}\n\nB &lt;- 12\nn &lt;- 4000\n\n# Integral of x f(x) on [0,B]\nxf &lt;- function(x) x * f(x)\nE_num &lt;- trapz(xf, 0, B, n)\n\n# Compare to exact E[X]=1/lambda (note: truncation introduces tiny bias)\nE_exact &lt;- 1 / lambda\n\ndata.frame(Numeric_Estimate = E_num, Exact_1_over_lambda = E_exact, AbsError = abs(E_num - E_exact))\n\n\n  Numeric_Estimate Exact_1_over_lambda     AbsError\n1        0.8333253           0.8333333 8.053183e-06\n\n\nKey Insight: The numeric estimate closely matches \\(\\frac{1}{\\lambda}\\) when the window is wide and the step is small. Truncating the integral at \\(B\\) introduces a small, controllable bias.\n\n\n17.3.2 2.2 Normal Mean (Symmetry, Numeric Check)\nFor a standard normal density \\(\\phi(x)=\\frac{1}{\\sqrt{2\\pi}}e^{-x^2/2}\\), symmetry gives \\(E[X]=0\\). We verify numerically on a symmetric window.\n\n\nCode\n# Purpose: Numerically verify E[X]=0 for the standard normal by integrating x*phi(x) on a symmetric window.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nphi &lt;- function(x) (1 / sqrt(2*pi)) * exp(-x^2 / 2)\nxf &lt;- function(x) x * phi(x)\n\n# Symmetric bounds to reduce truncation bias\nA &lt;- 5\nn &lt;- 4000\n\ntrapz &lt;- function(f, a, b, n) {\n  xs &lt;- seq(a, b, length.out = n + 1)\n  ys &lt;- f(xs)\n  dx &lt;- (b - a) / n\n  dx * (sum(ys) - 0.5*(ys[1] + ys[length(ys)]))\n}\n\nE_num &lt;- trapz(xf, -A, A, n)\n\ndata.frame(Estimate_E_X = E_num, SymmetricWindow = paste0(\"[-\", A, \", \", A, \"]\"))\n\n\n  Estimate_E_X SymmetricWindow\n1  1.15364e-16         [-5, 5]\n\n\nKey Insight: With symmetric limits, the positive and negative contributions cancel, yielding a mean near \\(0\\), as theory predicts.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#area-under-a-curve-aggregate-over-time",
+    "href": "lecture9.html#area-under-a-curve-aggregate-over-time",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.4 3. Area Under a Curve (Aggregate over Time)",
+    "text": "17.4 3. Area Under a Curve (Aggregate over Time)\nIntegrals also represent cumulative totals over time. Suppose a smoothed rate \\(r(t)\\) (e.g., sales per hour) is modeled by \\[\nr(t) = 2 + 0.5\\sin(2\\pi t), \\quad t \\in [0,1] \\text{ day}.\n\\] Then the total over the day is \\(\\int_0^1 r(t)\\,dt\\). We compute this numerically and visualize the area with shading.\n\n\nCode\n# Purpose: Compute the total ∫_0^1 r(t) dt for r(t)=2 + 0.5 sin(2π t) and visualize the shaded area.\n\nlibrary(ggplot2)\nlibrary(latex2exp)\n\nr &lt;- function(t) 2 + 0.5 * sin(2*pi*t)\n\n# Grid and values\nt &lt;- seq(0, 1, by = 0.001)\nrt &lt;- r(t)\n\n# Trapezoid total\ndx &lt;- diff(t)\ntraps &lt;- dx * (rt[-length(rt)] + rt[-1]) / 2\ntotal_num &lt;- sum(traps)\n\ndata.frame(Total_over_day = total_num)\n\n\n  Total_over_day\n1              2\n\n\nCode\n# Shaded area plot\ndf &lt;- data.frame(t = t, r = rt)\nggplot(df, aes(t, r)) +\n  geom_area(fill = \"grey88\", color = \"black\", linewidth = 1) +\n  geom_line(color = \"black\", linewidth = 1) +\n  labs(\n    title = TeX(\"Total over Time: $\\\\int_0^1 (2 + 0.5\\\\sin(2\\\\pi t) )\\\\,dt$\"),\n    x = \"t (days)\", y = \"rate r(t)\"\n  )\n\n\n\n\n\n\n\n\n\nKey Insight: The shaded area represents the aggregate (total) for the day. For sinusoidal rates, the integral averages the ups and downs into one interpretable number (units of “quantity per day”).",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#notes-on-numerical-integration-in-practice",
+    "href": "lecture9.html#notes-on-numerical-integration-in-practice",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.5 4. Notes on Numerical Integration in Practice",
+    "text": "17.5 4. Notes on Numerical Integration in Practice\n\nWindows and tails: For unbounded domains, integrate on a wide window where tails are negligible, and report the tail mass if known.\nStep size: Smaller steps improve accuracy but cost time; check convergence by refining \\(n\\).\nSmoothness: Trapezoids work well for smooth curves; for jagged/noisy data, consider smoothing first or using adaptive methods later on.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#practice-problems",
+    "href": "lecture9.html#practice-problems",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.6 Practice Problems",
+    "text": "17.6 Practice Problems\n\nLet \\(f(x)=\\lambda e^{-\\lambda x}\\) with \\(\\lambda=0.8\\).\n\nNumerically verify \\(\\int_0^{\\infty} f(x)\\,dx \\approx 1\\) on \\([0,12]\\).\n\nEstimate \\(E[X]\\) numerically and compare to \\(\\frac{1}{\\lambda}\\).\n\nUsing \\(\\phi(x)\\) standard normal, estimate \\(E[X^2]=\\int_{-\\infty}^{\\infty} x^2\\phi(x)\\,dx\\) on \\([-5,5]\\) and compare to the exact value \\(1\\).\nSuppose \\(r(t)=1+\\sin(\\pi t)\\) on \\([0,2]\\) (time in hours). Compute \\(\\int_0^2 r(t)\\,dt\\) numerically and interpret it in context.\nCreate your own smooth rate function on \\([0,1]\\), plot it, and compute the total. Describe how changing the amplitude or frequency affects the total.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#in-this-lesson-you-learned-to",
+    "href": "lecture9.html#in-this-lesson-you-learned-to",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.7 In this lesson, you learned to",
+    "text": "17.7 In this lesson, you learned to\n\nCheck that densities integrate to 1 and interpret tails on finite windows.\nCompute expected values as integrals and verify them numerically for common distributions.\nInterpret integrals as aggregates (area under a rate curve) and visualize with shaded plots.\nMake sound choices about numerical windows and step sizes when exact formulas are unavailable.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "lecture9.html#coming-up",
+    "href": "lecture9.html#coming-up",
+    "title": "17  Lecture 9: Integration in Data Science — Area, AUC, and Expected Value",
+    "section": "17.8 Coming Up",
+    "text": "17.8 Coming Up\nCongratulations—you’ve completed the calculus module! As you move into future topics (time series and beyond), keep these tools handy: derivatives for local sensitivity and optimization, integrals for accumulation and expectation. They are the quiet engines powering a lot of data science.",
+    "crumbs": [
+      "Module 5 — Calculus for Data Science",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Lecture 9: Integration in Data Science — Area, AUC, and Expected Value</span>"
+    ]
+  },
+  {
+    "objectID": "module6_week1_numerical.html",
+    "href": "module6_week1_numerical.html",
+    "title": "18  Module 6 / Week 1: Fundamentals and Function Approximation",
+    "section": "",
+    "text": "18.1 Overview\nApproximation, numerical differentiation/integration with accuracy considerations.",
+    "crumbs": [
+      "Module 6 — Numerical Methods",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Module 6 / Week 1: Fundamentals and Function Approximation</span>"
+    ]
+  },
+  {
+    "objectID": "module6_week1_numerical.html#status",
+    "href": "module6_week1_numerical.html#status",
+    "title": "18  Module 6 / Week 1: Fundamentals and Function Approximation",
+    "section": "18.2 Status",
+    "text": "18.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 6 — Numerical Methods",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Module 6 / Week 1: Fundamentals and Function Approximation</span>"
+    ]
+  },
+  {
+    "objectID": "module6_week2_roots.html",
+    "href": "module6_week2_roots.html",
+    "title": "19  Module 6 / Week 2: Root‑Finding Methods",
+    "section": "",
+    "text": "19.1 Overview\nBisection and Newton–Raphson with convergence intuition and pitfalls.",
+    "crumbs": [
+      "Module 6 — Numerical Methods",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Module 6 / Week 2: Root‑Finding Methods</span>"
+    ]
+  },
+  {
+    "objectID": "module6_week2_roots.html#status",
+    "href": "module6_week2_roots.html#status",
+    "title": "19  Module 6 / Week 2: Root‑Finding Methods",
+    "section": "19.2 Status",
+    "text": "19.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 6 — Numerical Methods",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Module 6 / Week 2: Root‑Finding Methods</span>"
+    ]
+  },
+  {
+    "objectID": "module7_montecarlo.html",
+    "href": "module7_montecarlo.html",
+    "title": "20  Module 7: Introduction to Monte Carlo Methods",
+    "section": "",
+    "text": "20.1 Overview\nRandom sampling to estimate areas, probabilities, and expectations.",
+    "crumbs": [
+      "Module 7 — Introduction to Monte Carlo Methods",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Module 7: Introduction to Monte Carlo Methods</span>"
+    ]
+  },
+  {
+    "objectID": "module7_montecarlo.html#status",
+    "href": "module7_montecarlo.html#status",
+    "title": "20  Module 7: Introduction to Monte Carlo Methods",
+    "section": "20.2 Status",
+    "text": "20.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 7 — Introduction to Monte Carlo Methods",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Module 7: Introduction to Monte Carlo Methods</span>"
+    ]
+  },
+  {
+    "objectID": "module8_timeseries.html",
+    "href": "module8_timeseries.html",
+    "title": "21  Module 8: Introduction to Time Series",
+    "section": "",
+    "text": "21.1 Overview\nTime plots, moving averages, simple forecasts, MAE/RMSE.",
+    "crumbs": [
+      "Module 8 — Introduction to Time Series",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 8: Introduction to Time Series</span>"
+    ]
+  },
+  {
+    "objectID": "module8_timeseries.html#status",
+    "href": "module8_timeseries.html#status",
+    "title": "21  Module 8: Introduction to Time Series",
+    "section": "21.2 Status",
+    "text": "21.2 Status\nContent for this module will be added here.",
+    "crumbs": [
+      "Module 8 — Introduction to Time Series",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Module 8: Introduction to Time Series</span>"
+    ]
+  }
+]
